@@ -35,7 +35,7 @@ Shaheed Rajguru College of Applied Sciences, University of Delhi</h2>
                         <h5> <span class="fa fa-link"></span> Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="index.html" style="font-family: 'Merriweather', serif;font-size:1.0rem;">Home</a></li>
-                            <li><a href="Registrations.html">Registrations</a></li>
+                          <!--  <li><a href="Registrations.html">Registrations</a></li>-->
                             <li><a href="spon_sorship.html">Sponsorship</a></li>
                             <li><a href="call_for_papers.html">Call for Papers</a></li>
                             <li><a href="important_dates.html">Important Dates</a></li>
@@ -107,9 +107,9 @@ Shaheed Rajguru College of Applied Sciences, University of Delhi</h2>
                             <a class="dropdown-item text-white" href="call_for_special_sessions.html">Call For Special Sessions</a>
                           </div>
                         </li>
-                        <li class="nav-item">
+                       <!-- <li class="nav-item">
                           <a class="nav-link text-white" href="Registrations.html">Registrations</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item">
                         <a class="nav-link text-white" href="important_dates.html">Important Dates</a>
                       </li>
