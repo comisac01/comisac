@@ -158,14 +158,14 @@ Shaheed Rajguru College of Applied Sciences, University of Delhi</h2>
                     <a class="dropdown-item text-white" href="#">Session 3</a>
             
                   </div>-->
-                     <li class="nav-item dropdown dmenu">
-                  <a class="nav-link text-white" href="#">
-                    Workshops
-                  </a>
-                <div class="dropdown-menu sm-menu">
-                    <a class="dropdown-item text-white" href="WS1.html">Workshop 1 </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-white" href="WS2.html">Workshop 2</a>
+                    <li class="nav-item dropdown dmenu">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                        Workshops
+                      </a>
+                      <div class="dropdown-menu sm-menu">
+                        <a class="dropdown-item text-white" href="WS1.html">Workshop 1</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-white" href="WS2.html">Workshop 2</a>
                     
             
                   </div>
