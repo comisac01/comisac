@@ -158,6 +158,17 @@ Shaheed Rajguru College of Applied Sciences, University of Delhi</h2>
                     <a class="dropdown-item text-white" href="#">Session 3</a>
             
                   </div>-->
+                     <li class="nav-item dropdown dmenu">
+                  <a class="nav-link text-white" href="#">
+                    Workshops
+                  </a>
+                <div class="dropdown-menu sm-menu">
+                    <a class="dropdown-item text-white" href="WS1.html">Workshop 1 </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-white" href="WS2.html">Workshop 2</a>
+                    
+            
+                  </div>
                  <!--   <div class="col col-12 col-lg-6 col-md-4">
         <a href="/gallery/Session 1.pdf"
             target="_blank"><button class="btn" style="width:100%;margin-bottom:1px;">Session 1
@@ -167,6 +178,7 @@ Shaheed Rajguru College of Applied Sciences, University of Delhi</h2>
 
       </div>-->
                 </li> 
+               
                     </ul>
                   </div>
       `);
