@@ -1,1 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="ceur-ws.css">
+<title>CEUR-WS.org/Vol-XXX - Workshop on Network, Computing and Industrial Applications</title>
+
+<style>
+
+body {
+font-family: arial, sans-serif;
+font-size: medium;
+/*background-image: url(https://ceur-ws.org/ceurws-bg.png);           */
+margin-left: +32px;
+margin-right: +8px;
+}
+
+/* 2015-04-21/MJ: for mobile-friendly layout */
+@-ms-viewport{
+  width: device-width;
+  initial-scale: 1.0;
+}
+
+@media print {
+    body > header address {
+        display:none;
+    }
+    body > header #document-license {
+        width:19em;
+        clear:right;
+        float:right;
+        margin-top:1em !important;
+        margin-right:0;
+    }
+    #content {
+        page-break-before:always;
+    }
+}
+
+A:link {color: #404080; text-decoration: none;}  /* display of links */
+A:visited {color: #404080; text-decoration: none;} /* visited links */
+A:hover {color: #000080; text-decoration: none;} /* links under the cursor */
+:target {background-color:#FFFFFF;} /* background for current fragment */
+
+H1 {color:#000000; font-family:arial, cursive, sans-serif;}
+
+P,TABLE,TR,TD {font-family:arial,sans-serif;}
+
+UL {list-style-type: square; list-style-image: url(/ceurws-bullet-6x12.png);}
+
+LI {margin-bottom:7px;}   /* separates paper elements */
+
+PRE {color:#228120}
+
+.CEURPAGES {float:right; padding: 2px; font-size:smaller;}
+.AUXPAGES {float:right; padding: 2px; font-size:smaller;}
+
+.CEURTOC {width:90%; page-break-before:always;}    /* table of contents a bit narrower than the total page width */
+
+.CEURAUTHOR {font-style:italic;}
+.CEURAUTHORS {font-style:italic;}
+.AUXAUTHOR {font-style:normal;}
+.AUXAUTHORS {font-style:normal;}
+
+.CEURTITLE {font-weight:normal;}
+.AUXTITLE {font-weight:normal;}
+.CEURTITLE:hover {color: #006040;}   /* proper CEURTITLEs get highlighted */
+
+.CEURVOLNR {font-weight:bold; color:#404040; font-size:large;}
+
+/* write "CEUR-WS.org/" with background color before the VOLNR */
+/* will show up when printing the page */
+/* .CEURVOLNR:before{content:"CEUR-WS.org/"; color:#F5F4EF; font-size:large;} */
+
+.CEURURN {font-weight:bold; color:#404040;}
+
+/* for paper directories */
+.CEURVOLURL {font-weight:bold; color:#000080;}
+.CEURPAPERID {font-weight:bold; color:#404040;}
+
+.CEURABSTRACT {/* border-style: solid; border-width: 1px; padding: 5px 10px 5px 10px; */
+     word-wrap: break-word; margin-left: +42px; margin-right: +68px; }
+
+.unobtrusive {color: #777777; font-size: smaller;} /* unobtrusive text; for copyright notes */
+
+.copyright {font-size: x-small;} /* even smaller text in copyright notes; x-small replaces &lt;font size="-1"&gt; when base size is medium */
+
+
+#CEURWSLOGO {
+   background-image: url('./CEUR-WS-logo.png');
+   height: 100px;
+   width: 390px;
+   print-color-adjust: exact !important;                 /*Firefox*/
+}
+#CEURWSLOGO:hover {
+   background-image: url('./CEUR-WS-logo-blue.png'); 
+/*   background-image: url('./CEUR-WS-logo-xmas.png'); */
+}
+
+
+#CEURCCBY {
+   background-image: url('./cc-by_100x35.png');
+   width: 100px;
+   height: 35px;
+   print-color-adjust: exact !important;                 /*Firefox*/
+}
+
+
+</style>
+
+</head>
+<!--CEURLANG=eng -->
+<body>
+
+<table style="border: 0; border-spacing: 0; border-collapse: collapse; width: 95%">
+<tbody><tr>
+<td style="text-align: left; vertical-align: middle">
+<a href="https://ceur-ws.org/"><div id="CEURWSLOGO"></div></a>
+</td>
+<td style="text-align: right; vertical-align: middle">
+<div style="float:left" id="CEURCCBY"></div>
+<span class="CEURVOLNR">Vol-XXX</span> <br>
+<span class="CEURURN">urn:nbn:de:0074-XXX-C</span>
+<p class="unobtrusive copyright" style="text-align: justify">Copyright © 2024 for 
+the individual papers by the papers' authors. 
+Copyright © <span class="CEURPUBYEAR">2024</span> for the volume
+as a collection by its editors.
+This volume and its papers are published under the
+Creative Commons License Attribution 4.0 International
+<a href="https://creativecommons.org/licenses/by/4.0/">(<span class="CEURLIC">CC BY 4.0</span>)</a>.</p>
+</td>
+</tr>
+</tbody></table>
+
+<hr>
+
+<br><br><br>
+
+<h1><a href="https://comsia.in"><span class="CEURVOLACRONYM">Workshop on Network, Computing and Applications</span></a><br>
+<!-- <span class="CEURVOLTITLE">Workshop on Computing and Intelligent Systems</span></h1> -->
+<br>
+
+<h3>
+<span class="CEURFULLTITLE">Workshop Proceedings on Network, Computing and Applications is co-organized with
+    International Conference on Computing and Communication Systems for Industrial Applications
+</span><br>
+<!-- co-located with <span class="CEURCOLOCATED">NONE</span> 
+(<span class="CEURCOLOCATED">COMSIA 2024</span>)--><br>
+</h3>
+<h3><span class="CEURLOCTIME">New Delhi, India, May 10-11, 2024</span>.</h3> 
+
+<br>
+<b> Edited by </b>
+<p>
+
+</p>
+<p></p><h3>
+  <a href="https://scholar.google.co.in/citations?user=zCalDU8AAAAJ&hl=en"><span class="CEURVOLEDITOR">Aditya Khamparia</span></a>, Department of Computer Science, Babasaheb Bhimrao Ambedkar University, Central University, Lucknow, UP, India<br> 
+  <a href="https://scholar.google.co.in/citations?user=MpPI1p4AAAAJ&hl=en"><span class="CEURVOLEDITOR">Deepak Gupta</span></a>, Department of CSE, Maharaja Agrasen Institute of Technology, Rohini, Delhi<br>
+   <a href="https://scholar.google.com/citations?user=aZ6bcngAAAAJ&hl=en"><span class="CEURVOLEDITOR">Aboul Ella Hassanien </span></a>, Kuwait University, Kuwait<br>
+   
+   
+</h3>
+
+
+<hr>
+
+<br><br><br>
+
+
+<!--<div class="CEURTOC">
+<a href = "Table of Content.pdf"><h2> Table of Contents </h2></a>-->
+
+<ul>
+
+
+<li id="invited2"><a href="./gallery/Preface2.pdf">
+<span class="CEURTITLE">Preface</span></a> 
+<span class="CEURPAGES">i</span> 
+<br>
+<span>
+Summary: There were 100 papers submitted for peer-review and only 18 papers were accepted as regular papers.
+</span>
+</li>
+
+</ul>
+
+<ul>
+
+<!--<span class="CEURPAGES" style="color:black">01-368</span>--> <br><br>
+
+	<!--<span class="CEURPAGES" style="color:black">369-452</span>--> <br><br>
+	
+	<li id="CEUR-Template-1col"><a href="Paper 1.pdf">
+          <span class="CEURTITLE">A Deadline-Aware Priority based Semi Greedy Task
+Scheduling Technique in Fog Computing</span></a>
+          <span class="CEURPAGES">1-11</span> 
+          <br>
+          <span class="CEURAUTHOR">Shipra Gautam</span>,
+          <span class="CEURAUTHOR">Amarjit Malhotra </span>
+          </li>
+	
+	<li id="CEUR-Template-1col"><a href="Paper 2.pdf">
+          <span class="CEURTITLE">Hyperspectral Image Reconstruction in Remote Sensing:
+Laplace GAN Synthesis Coupled with VGG-UNet Classification</span></a>
+          <span class="CEURPAGES">12-22</span> 
+          <br>
+          <span class="CEURAUTHOR">Shikha Sain</span>,
+          <span class="CEURAUTHOR">Dr. Monika Saxena </span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 3.pdf">
+          <span class="CEURTITLE">Leveraging Cloud Computing for Drug Review Analysis</span></a>
+          <span class="CEURPAGES">23-33</span> 
+          <br>
+          <span class="CEURAUTHOR">Shiva Teja Pecheti</span>,
+          <span class="CEURAUTHOR">Nithin Kodurupaka </span>,
+		 <span class="CEURAUTHOR">Basavadeepthi H M</span>,
+		 <span class="CEURAUTHOR">Talari Tanvi </span>,
+		 <span class="CEURAUTHOR">Dr. Beena B.M. </span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 4.pdf">
+          <span class="CEURTITLE">Revolutionizing Healthcare: Cloud-Based Health Information
+Exchange and Disease Prediction</span></a>
+          <span class="CEURPAGES">34-46</span> 
+          <br>
+          <span class="CEURAUTHOR">Sai Nithin Nayini</span>,
+          <span class="CEURAUTHOR">Vishwas Gade </span>,
+		  <span class="CEURAUTHOR">Mani Prakash Reddy Gudapareddy </span>,
+		  <span class="CEURAUTHOR">Varshith Peddineni  </span>
+		  <span class="CEURAUTHOR">Dr. Beena B.M.  </span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 5.pdf">
+          <span class="CEURTITLE">SLA-based task scheduling in cloud computing using
+randomized PSO algorithm</span></a>
+          <span class="CEURPAGES">47-58</span> 
+          <br>
+          <span class="CEURAUTHOR">Swati Lipsa</span>,
+          <span class="CEURAUTHOR">Ranjan Kumar Dash </span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 6.pdf">
+          <span class="CEURTITLE">Systematic Review of Blockchain integrated 
+		  Internet of Things: Architecture, Benefits, Security and Privacy concerns</span></a>
+          <span class="CEURPAGES">59-68</span> 
+          <br>
+          <span class="CEURAUTHOR">Bharati B Pannyagol</span>,
+          <span class="CEURAUTHOR">Dr. Santosh Deshpande </span>,
+		<span class="CEURAUTHOR">Dr. Rohit Kaliwal </span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 7.pdf">
+          <span class="CEURTITLE">Detecting DDoS Attacks Using ML and Random Forest Feature Classifier Method</span></a>
+          <span class="CEURPAGES">69-84</span> 
+          <br>
+          <span class="CEURAUTHOR">Dr.Surendra reddy Vinta</span>,
+          <span class="CEURAUTHOR">Dr. V.Srilakshmi  </span>,
+		<span class="CEURAUTHOR">Dr. Sagar Dhanraj Pande </span>,
+		<span class="CEURAUTHOR">Dr.G.Sai Chaitanya Kumar </span>
+          </li>
+	<li id="CEUR-Template-1col"><a href="Paper 8.pdf">
+          <span class="CEURTITLE">A Road Traffic Surveillance Model for Wide Range Helmet Usage
+Sensing and Number Plate Recall using Integrated Deep Learning Model</span></a>
+          <span class="CEURPAGES">85-99</span> 
+          <br>
+          <span class="CEURAUTHOR">Dr.Surendra reddy Vinta</span>,
+          <span class="CEURAUTHOR">Dr. V.Srilakshmi  </span>,
+		<span class="CEURAUTHOR">Dr. Sagar Dhanraj Pande </span>,
+		<span class="CEURAUTHOR">Dr.G.Sai Chaitanya Kumar </span>
+          </li>
+
+        <li id="CEUR-Template-1col"><a href="Paper 9.pdf">
+          <span class="CEURTITLE">IT-led innovation in small tourism enterprises:
+key components, trends, and barriers</span></a>
+          <span class="CEURPAGES">100-110</span> 
+          <br>
+          <span class="CEURAUTHOR">Reeta Sah</span>,
+          <span class="CEURAUTHOR">Santoshi Sengupta  </span>
+          </li>
+
+	  <li id="CEUR-Template-1col"><a href="Paper 10.pdf">
+          <span class="CEURTITLE">Water Quality Detection for the Survival of Aquatic Beings</span></a>
+          <span class="CEURPAGES">111-120</span> 
+          <br>
+          <span class="CEURAUTHOR">Sukanya Das</span>,
+          <span class="CEURAUTHOR">Rohan Biswas  </span>,
+		  <span class="CEURAUTHOR">Subhamita Mukherjee  </span>,
+		  <span class="CEURAUTHOR">Subhajit Bhowmick </span>
+          </li>
+
+	
+	  <li id="CEUR-Template-1col"><a href="Paper 11.pdf">
+          <span class="CEURTITLE">A Gesture-based HRI System for Health Care</span></a>
+          <span class="CEURPAGES">121-132</span> 
+          <br>
+          <span class="CEURAUTHOR">Vibha Gaur</span>,
+          <span class="CEURAUTHOR">Pushkar Baranwal </span>,
+	   <span class="CEURAUTHOR">Ravneet Kaur </span>
+		
+          </li>
+
+	
+	  <li id="CEUR-Template-1col"><a href="Paper 12.pdf">
+          <span class="CEURTITLE">A systematic review of deep learning approaches for image enhancement 
+		  and reconstruction in environmental applications</span></a>
+          <span class="CEURPAGES">133-149</span> 
+          <br>
+          <span class="CEURAUTHOR">Shikha Sain</span>,
+          <span class="CEURAUTHOR">Dr. Monika Saxena  </span>
+          </li>
+
+	  <li id="CEUR-Template-1col"><a href="Paper 13.pdf">
+          <span class="CEURTITLE">Delving Deeper into Advanced Big Data Processing and
+Analytics Techniques for Enhanced Digital Transformation</span></a>
+          <span class="CEURPAGES">150-161</span> 
+          <br>
+          <span class="CEURAUTHOR">Siddhartha Choubey</span>,
+          <span class="CEURAUTHOR">Dipti Jaiswal </span>,
+	   <span class="CEURAUTHOR">Manuraj Jaiswal </span>,
+	    <span class="CEURAUTHOR">Abha Choubey </span>
+          </li>
+
+	  <li id="CEUR-Template-1col"><a href="Paper 14.pdf">
+          <span class="CEURTITLE">Smart Coaster: Enhancing Beverage Enjoyment with
+Intelligent Temperature Control and User Interaction</span></a>
+          <span class="CEURPAGES">162-178</span> 
+          <br>
+          <span class="CEURAUTHOR">Kavita A. Sultanpure</span>,
+          <span class="CEURAUTHOR">Tejas R. Wasekar  </span>,
+		    <span class="CEURAUTHOR">Shubham R. Tambe </span>,
+		    <span class="CEURAUTHOR">Payal Powar  </span>,
+		    <span class="CEURAUTHOR">Rijul Sidanale  </span>,
+		    <span class="CEURAUTHOR">Shruti Sood  </span>
+          </li>
+
+	 <li id="CEUR-Template-1col"><a href="Paper 15.pdf">
+          <span class="CEURTITLE">A Univariate and Multivariate Time Series Analysis for the
+prediction of Maize production in India</span></a>
+          <span class="CEURPAGES">179-192</span> 
+          <br>
+          <span class="CEURAUTHOR">Amala Johnson</span>,
+          <span class="CEURAUTHOR">Nimitha John  </span>,
+	 <span class="CEURAUTHOR">Joy Paulose </span>
+          </li>
+
+	 <li id="CEUR-Template-1col"><a href="Paper 16.pdf">
+          <span class="CEURTITLE">An Optimized Machine Learning-Based Stroke
+Prediction: Enhancing Precision Medicine and Public Health</span></a>
+          <span class="CEURPAGES">193-205</span> 
+          <br>
+          <span class="CEURAUTHOR">Parul Khatri</span>,
+          <span class="CEURAUTHOR">Dr. Archana Sharma  </span>
+          </li>
+
+	 <li id="CEUR-Template-1col"><a href="Paper 17.pdf">
+          <span class="CEURTITLE">Weather Monitoring and Cloud-Burst Prediction Based on
+Machine Learning Algorithms: An Initiative towards Disaster Management</span></a>
+          <span class="CEURPAGES">206-220</span> 
+          <br>
+          <span class="CEURAUTHOR">Adit Sharma</span>,
+          <span class="CEURAUTHOR">Suman Bhatia  </span>,
+		 <span class="CEURAUTHOR">Ankit Verma  </span>
+          </li>
+
+	 <li id="CEUR-Template-1col"><a href="Paper 18.pdf">
+          <span class="CEURTITLE">Effective Application of Supervised KNN Algorithm to
+Ascertain and Assess Abnormal Growth of Blood Cancerous Cells Predictive Modeling</span></a>
+          <span class="CEURPAGES">221-230</span> 
+          <br>
+          <span class="CEURAUTHOR">Sanchari Chowdhury</span>,
+		 <span class="CEURAUTHOR">Maria George</span>,
+         <span class="CEURAUTHOR">Sushruta Mishra</span>,
+	<span class="CEURAUTHOR">Ahmed J. Obaid</span>,
+	<span class="CEURAUTHOR">Mohammed Ayad Alkhafaji</span>
+          </li>
+
+
+	
+  </ul>
+
+</div>
+
+<hr>
+<span class="unobtrusive">
+2024-03-20: submitted by Dr. Aditya Khamparia, 
+            metadata incl. bibliographic data published under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0</a><br>
+<span class="CEURPUBDATE">xxxx-xx-xx</span>: published on CEUR Workshop Proceedings (CEUR-WS.org, ISSN 1613-0073)
+	|<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fceur-ws.org%2FVol-XXX%2F">valid HTML5</a>|
+</span>
+
+</body></html>
 
