@@ -7,18 +7,17 @@ window.onload = function (e) {
 
   </span>
   <div class="jumbo-details">
-    <h1>INTERNATIONAL SYMPOSIUM ON COMPUTING <br>
-      AND COMMUNICATION <br>SYSTEMS FOR INDUSTRIAL APPLICATIONS <br>(ComSIA)</h1>
+    <h1>INTERNATIONAL CONFERENCE ON COMPUTING SYSTEMS AND INTELLIGENT APPLICATIONS ,br> (ComSIA 2025) <br></h1>
     <hr>
     <h2 class="">
-      May 26-27<sup>th</sup> ,2024,
+      March 28-29<sup>th</sup> ,2025,
     </h2>
-    <h2 class="mb-4">Delhi University, Delhi,India</h2>
+    <h2 class="mb-4">COMSIA 2025 WILL BE JOINTLY ORGANSIED BY SCHOOL OF OPEN LEARNING, UNIVERSITY OF DELHI AND <br>SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, UNIVERSITY OF DELHI <br></h2>
     <p id="demo" style="font-size:1.4rem;font-weight:500"></p>
   </div>
   <div class="right-part-container">
     <div class="right-part box-shadow">
-      <img src="gallery/university.jpg" alt="">
+      <img src="./gallery/university.jpg" alt="">
     </div>
   </div>
       `);
