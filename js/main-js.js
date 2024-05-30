@@ -10,9 +10,9 @@ window.onload = function (e) {
     <h1>INTERNATIONAL CONFERENCE ON COMPUTING SYSTEMS AND INTELLIGENT APPLICATIONS <br> (ComSIA 2025) <br></h1>
     <hr>
     <h2 class="">
-      March 28-29<sup>th</sup> ,2025,
+      March 28-29<sup>th</sup>,2025
     </h2>
-    <h2 class="mb-4">COMSIA 2025 WILL BE JOINTLY ORGANSIED BY SCHOOL OF OPEN LEARNING, UNIVERSITY OF DELHI AND <br>SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, UNIVERSITY OF DELHI <br></h2>
+    <h3 class="mb-4">COMSIA 2025 WILL BE JOINTLY ORGANSIED BY SCHOOL OF <br> OPEN LEARNING, UNIVERSITY OF DELHI AND <br> SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, <br> UNIVERSITY OF DELHI <br></h3>
     <p id="demo" style="font-size:1.4rem;font-weight:500"></p>
   </div>
   <div class="right-part-container">
@@ -106,8 +106,8 @@ window.onload = function (e) {
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-white" href="call_for_special_sessions.html">Call For Special Sessions</a>
                           </div>
-                        </li>
-                       < <li class="nav-item">
+                        </li>  
+                        <li class="nav-item">
                           <a class="nav-link text-white" href="Registrations.html">Registrations</a>
                         </li>
                         <li class="nav-item">
@@ -190,7 +190,7 @@ window.onload = function (e) {
 
 // me commented
 // Set the date we're counting down to
-var countDownDate = new Date("june 10, 2024 12:00:00").getTime();
+var countDownDate = new Date("March 28, 2025 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
