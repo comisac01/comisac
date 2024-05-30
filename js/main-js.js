@@ -107,9 +107,9 @@ window.onload = function (e) {
                             <a class="dropdown-item text-white" href="call_for_special_sessions.html">Call For Special Sessions</a>
                           </div>
                         </li>
-                       <!-- <li class="nav-item">
+                       < <li class="nav-item">
                           <a class="nav-link text-white" href="Registrations.html">Registrations</a>
-                        </li>-->
+                        </li>
                         <li class="nav-item">
                         <a class="nav-link text-white" href="important_dates.html">Important Dates</a>
                       </li>
