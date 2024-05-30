@@ -7,7 +7,7 @@ window.onload = function (e) {
 
   </span>
   <div class="jumbo-details">
-    <h1>INTERNATIONAL CONFERENCE ON COMPUTING SYSTEMS AND INTELLIGENT APPLICATIONS ,br> (ComSIA 2025) <br></h1>
+    <h1>INTERNATIONAL CONFERENCE ON COMPUTING SYSTEMS AND INTELLIGENT APPLICATIONS <br> (ComSIA 2025) <br></h1>
     <hr>
     <h2 class="">
       March 28-29<sup>th</sup> ,2025,
