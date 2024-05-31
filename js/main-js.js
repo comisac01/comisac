@@ -145,11 +145,11 @@ window.onload = function (e) {
                     
                     <!-- <li class="nav-item">
                     <a class="nav-link text-white" href="#">Accommodation</a>
-                  </li> -->
+                  </li> 
                     <li class="nav-item dropdown dmenu">
                   <a class="nav-link text-white" href="session-1.html">
                     Special Sessions
-                  </a>
+                  </a>-->
                 <!--  <div class="dropdown-menu sm-menu">
                     <a class="dropdown-item text-white" href="/gallery/Session1.pdf">Session 1</a>
                     <div class="dropdown-divider"></div>
