@@ -12,7 +12,7 @@ window.onload = function (e) {
     <h2 class="">
       March 28-29<sup>th</sup>,2025
     </h2> 
-    <h3 class="">COMSIA 2025 WILL BE JOINTLY ORGANSIED BY SCHOOL OF <br> OPEN LEARNING, UNIVERSITY OF DELHI AND <br> SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, <br> UNIVERSITY OF DELHI <br></h3>
+    <h4 class="">COMSIA 2025 WILL BE JOINTLY ORGANSIED BY SCHOOL OF <br> OPEN LEARNING, UNIVERSITY OF DELHI AND <br> SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, <br> UNIVERSITY OF DELHI <br></h4>
     <p id="demo" style="font-size:1.4rem;font-weight:500"></p>
   </div>
   <div class="right-part-container">
