@@ -136,6 +136,9 @@ window.onload = function (e) {
                     <li class="nav-item">
                       <a class="nav-link text-white" href="downloads.html">Downloads</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="prevconf.html">Previous Conference (ComSIA 2024)</a>
+                    </li>
                     <!-- <li class="nav-item">
                     <a class="nav-link text-white" href="Gallary.html">Gallery</a>
                   </li> -->
