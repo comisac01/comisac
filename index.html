@@ -10,45 +10,47 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
-
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="icon" href="icontitle.png" type="image/x-icon">-->
-
-
   <title>ComSIA - Home</title>
   <title>Example of a blinking text using CSS within a marquee</title>
-        <style>
-            .blink {
-                animation: blinker 1.8s linear infinite;
-                color: red;
-                font-family: sans-serif;
-            }
-            @keyframes blinker {
-                40% {
-                    opacity: 0;
-                }
-            }
-        </style>
+  <style>
+    .blink {
+      animation: blinker 1.8s linear infinite;
+      color: red;
+      font-family: sans-serif;
+    }
+
+    @keyframes blinker {
+      40% {
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!-- scroll to top -->
   <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
   <!-- This module is upper heading of website -->
-  <div class="jumbotron"></div>
+  <div class="jumbotron">
+  </div>
   <!-- nav bar is done by this -->
   <!-- <div class="navbar-style"> -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top"></nav>
+  <nav class="navbar navbar-expand-sm sticky-top navbar-color">
+  </nav>
 
   <!-- </div> -->
   <!-- end of navigation bar -->
   <br>
- <!-- <marquee class="blink"><b>Now, the accepted papers of ComSIA 2024 will be published as proceedings in CEUR Workshop Proceedings indexed by Scopus, DBLP, and Many More.</b>
+  <!-- <marquee class="blink"><b>Now, the accepted papers of ComSIA 2024 will be published as proceedings in CEUR Workshop Proceedings indexed by Scopus, DBLP, and Many More.</b>
   </marquee>-->
-   <marquee class="blink" scrollamount="5"><b>Online Presentation of Papers is allowed.</b>
+  <marquee class="blink mb-4" scrollamount="5"><b>Online Presentation of Papers is allowed.</b>
   </marquee>
-  
+
   <!-- carousel -->
   <div class="container">
 
@@ -108,131 +110,142 @@
   <!-- end of carousel -->
 
   <br>
-  <div class="container">
+
+
+  <div class="container detail-card bg-white">
     <div class="row row-content">
-      
-      <div class="col-12 col-sm col-md">
-        <h1 class="h1 text-center">About Symposium</h1>
+      <div class="title-container">
+        <div class="title-tag">
+          <h1 class="h3 text-center">About Conference</h1>
+        </div>
+      </div>
+      <div class="col-12 col-sm col-md p-4 mt-4">
         <p class="justify-content-center"
           style="text-align:justify;font-size: 1.2rem; font-family: 'Roboto', sans-serif;">
-         ComSIA 2024 is organised with the objective of bringing together innovative scientists, professors, 
-          research scholars, students and industrial experts in the field of Sciences, Computational Methods 
-          and Techniques to a common platform. The primary goal of the Symposium is to promote the exchange 
-          of innovative scientific information between researchers, developers, engineers, students, and 
-          practitioners. Overall the Symposium will provide the researchers and attendees with prospects 
-          for national and international collaboration and networking among universities and institutions 
-          from India and abroad for promoting research. ComSIA 2024 will be jointly organized by
-          School of Open Learning, University of Delhi and Shaheed Rajguru College of Applied Sciences, 
-          University of Delhi on 10-11 May, 2024. 
+          ComSIA 2025 is organised with the objective of bringing together innovative scientists, professors, 
+          research scholars, students and industrial experts in the field of Sciences, Computational Methods
+           and Techniques to a common platform. The primary goal of the Symposium is to promote the exchange 
+           of innovative scientific information between researchers, developers, engineers, students, and 
+           practitioners. Overall the Conference will provide the researchers and attendees with prospects 
+           for national and international collaboration and networking among universities and institutions 
+           from India and abroad for promoting research and development. ComSIA 2025 will be jointly
+            organized by School of Open Learning, University of Delhi and Shaheed Rajguru College of Applied 
+            Sciences, University of Delhi on 28-29 March, 2025. 
+            All the accepted paper will be published in the proceedings of ComSIA 2025 by Springer (Proposed) 
+            indexed in reputed databases like Scopus, EI, WoS and many more. 
+            The associated journal to consider the high-quality extended papers:
           <!-- The proceedings of ComSIA 2024 will be published in Studies in Autonomic, Data-driven and Industrial 
           Computing Series by <a href="https://www.springer.com/series/16624"> Springer [Non-SCOPUS series] </a> 
           and CEUR Workshop Proceedings <a href="https://www.scopus.com/sourceid/21100218356">[Scopus Indexed Proceedings]</a> -->
         </p>
-        <h5>  1. Intelligent Decision Technologies, IOS Press, SCOPUS, ESCI</h5>
-      <h5>   2. Alexandria Engineering Journal, Elsevier, SCI</h5> 
-       <h5>   3. Internet Technology Letters, SCOPUS, ESCI </h5> 
-       <h5>   4. IEEE transactions on Consumer Electronics, SCI </h5> 
-        <h5>  5. SLAS Technology Elsevier, SCI </h5>
-         <h5>  6. Healthcare Analytics Elsevier, SCOPUS </h5>
-         <h5>  7. Journal of Neuroscience Methods Elsevier, SCI </h5>
-        <h5>  8. ACM TALLIP, SCI </h5>
-        
+        <h5> 1. Intelligent Decision Technologies, IOS Press, SCOPUS, ESCI</h5>
+        <h5> 2. Alexandria Engineering Journal, Elsevier, SCI</h5>
+        <!--<h5> 3. Internet Technology Letters, SCOPUS, ESCI </h5>
+        <h5> 4. IEEE transactions on Consumer Electronics, SCI </h5>
+        <h5> 5. SLAS Technology Elsevier, SCI </h5>
+        <h5> 6. Healthcare Analytics Elsevier, SCOPUS </h5>
+        <h5> 7. Journal of Neuroscience Methods Elsevier, SCI </h5>
+        <h5> 8. ACM TALLIP, SCI </h5>-->
 
- 
-        
-        <a class="btn btn-info" href=" https://cmt3.research.microsoft.com/COMSIA2024"
-          target="_blank">Paper Submission Link</a>
+
+
+
+        <a class="btn btn-info mt-3 button-shadow px-3" href="https://cmt3.research.microsoft.com/ComSIA2025"
+          target="_blank">Paper
+          Submission
+          Link</a>
       </div>
     </div>
   </div>
   <!-- end of content -->
   <br>
 
-  <div class="container">
+  <div class="container mt-4">
     <div class="row">
       <div class="col-12 col-sm- col-md-4 text-center">
-        <div class="card">
-          <div class="card-header  bg-info text-white">
+        <div class="card mb-4 roonded rounded-4">
+          <div class="card-header  bg-info text-white box-shadow" style="font-size: 1.2rem;font-weight:500;">
             Important Dates
           </div>
-          <div class="card-body marquees">
+          <div class="card-body marquees box-shadow">
             <marquee width="100%" behavior="scroll" direction="up" scrollamount="3" class="text-center dates mb-0"
-              onmouseover="this.stop();" onmouseout="this.start();">
-              <p href="#" class="dates text-center">Paper Submission - 20 February 2024</p>
+              onmouseover="this.stop();" onmouseout="this.start();" height="270">
+              <p href="#" class="dates text-center">Paper Submission - 30 October 2024</p>
               <!-- 2019 -->
-              <p href="#" class="dates text-center">Notification of Acceptance - 1st March 2024</p>
+              <p href="#" class="dates text-center">Notification of Acceptance - 30 November 2024</p>
               <!-- 2020 -->
-              <p href="#" class="dates text-center">Early Bird Registration - 22nd February 2024</p>
+              <p href="#" class="dates text-center">Early Bird Registration - 30 December 2024</p>
               <!-- 2020 -->
-              <p href="#" class="dates text-center">Late Registration - 10th March 2024</p>
-              <p href="#" class="dates text-center">Symposium Date - 10-11 May 2024 2024</p>
+              <p href="#" class="dates text-center">Late Registration - 10th January 2025</p>
+              <p href="#" class="dates text-center">Conference Date - 28-29 March 2025</p>
             </marquee>
-            <a href="important_dates.html" class="btn btn-primary ">see More</a>
+            <a href="important_dates.html" class="btn btn-primary button-shadow px-4">See More</a>
           </div>
         </div>
       </div>
       <!-- this is for using Downloads -->
       <div class="col-12 col-sm- col-md-4 text-center">
-        <div class="card">
-          <div class="card-header  bg-info text-white">
+        <div class="card mb-4">
+          <div class="card-header  bg-info text-white box-shadow" style="font-size: 1.2rem;font-weight:500;">
             Downloads
           </div>
-          <div class="card-body marquees">
+          <div class="card-body marquees box-shadow">
             <marquee width="100%" behavior="scroll" direction="up" scrollamount="3" class="text-center dates mb-0"
-              onmouseover="this.stop();" onmouseout="this.start();">
+              onmouseover="this.stop();" onmouseout="this.start();" height="270">
               <a href="http://dosci-conf.com/ManuscriptguidelinesforEnglishbooks.pdf">
-                  Manu Script Guidelines </a><br>
-             
-              <a href="http://dosci-conf.com/Checklist.pdf"> Checklist </a><br>
-            
-              <a href="http://dosci-conf.com/SpringerWordTemplate.zip" >
-                  Spring Word Template </a><br>
-            
-              <a href="http://dosci-conf.com/SpringerLaTeXTemplate.zip" >
-                  Spring La Tex Template </a> <br>
-              
-        <a href="/gallery/Brochure 2.pdf">
-          Symposium Brochure
-             </a><br>
-          <a href="gallery/Special-session-CFP-Template (Comsia).docx"> Special-session-CFP-Template (Comsia)</a>
-      
+                Manu Script Guidelines </a><br>
 
-      </div>
-              <hr id="hrr">
-            </marquee>
-            <a href="downloads.html" class="btn btn-primary ">see More</a>
+              <a href="http://dosci-conf.com/Checklist.pdf"> Checklist </a><br>
+
+              <a href="http://dosci-conf.com/SpringerWordTemplate.zip">
+                Springer Word Template </a><br>
+
+              <a href="http://dosci-conf.com/SpringerLaTeXTemplate.zip">
+                Springer La Tex Template </a> <br>
+
+              <a href="/gallery/Brochure 2.pdf">
+                Conference Brochure
+              </a><br>
+              <a href="gallery/Special-session-CFP-Template (Comsia).docx"> Special-session-CFP-Template (Comsia)</a>
+
+
           </div>
+          <hr id="hrr">
+          </marquee>
+          <a href="downloads.html" class="btn btn-primary button-shadow px-4">See More</a>
         </div>
       </div>
-      <!-- this is for Important Notices -->
-      <div class="col-12 col-sm- col-md-4 text-center">
-        <div class="card">
-          <div class="card-header bg-info text-white">
-            Notices
-          </div>
-          <div class="card-body marquees">
-            <marquee width="100%" behavior="scroll" direction="up" scrollamount="3" class="text-center dates mb-0"
-              onmouseover="this.stop();" onmouseout="this.start();">
-              <a href="#" class="dates text-center">ComSIA 2024 will be jointly organsied by School of Open Learning,
-                University of Delhi and Shaheed Rajguru College of Applied Sciences, University of Delhi.</a> <br>
-                <a href="#" class="dates text-center">Now, Some accepted papers of ComSIA 2024 will be published 
-                  in CEUR Workshop Proceedings [Indexed by SCOPUS, DBLP and other leading databases.</a>
-              <hr id="hrr">
-            </marquee>
-            <a href="#" class="btn btn-primary ">see More</a>
-          </div>
-        </div>
-      </div>
-      <!-- end of cards -->
     </div>
+    <!-- this is for Important Notices -->
+    <div class="col-12 col-sm- col-md-4 text-center">
+      <div class="card mb-4">
+        <div class="card-header bg-info text-white box-shadow" style="font-size: 1.2rem;font-weight:500;">
+          Notices
+        </div>
+        <div class="card-body marquees box-shadow">
+          <marquee width="100%" behavior="scroll" direction="up" scrollamount="3" class="text-center dates mb-0"
+            onmouseover="this.stop();" onmouseout="this.start();" height="270">
+            <a href="#" class="dates text-center">ComSIA 2025 will be jointly organsied by School of Open Learning,
+              University of Delhi and Shaheed Rajguru College of Applied Sciences, University of Delhi.</a> <br>
+           <!-- <a href="#" class="dates text-center">Now, Some accepted papers of ComSIA 2024 will be published
+              in CEUR Workshop Proceedings [Indexed by SCOPUS, DBLP and other leading databases.</a>-->
+            <hr id="hrr">
+          </marquee>
+          <a href="#" class="btn btn-primary button-shadow px-4">See More</a>
+        </div>
+      </div>
+    </div>
+    <!-- end of cards -->
   </div>
+
   <br>
- 
+
   </div>
+
   <br>
 
   <!-- start of footer -->
-  <footer class="footer bg-dark">
+  <footer class="footer" style="background-color: #2b69b4;">
   </footer>
   <!-- end of footer -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
@@ -245,6 +258,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+
 
   <script type="text/javascript">
     $(document).ready(function () {

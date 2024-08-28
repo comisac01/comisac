@@ -12,11 +12,10 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
-
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="icontitle.png" type="image/x-icon">
-
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>ComSAI - About Institute</title>
 </head>
@@ -26,50 +25,55 @@
   <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
   <div class="jumbotron">
   </div>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top"></nav>
+  <nav class="navbar navbar-expand-sm sticky-top navbar-color"></nav>
   <br>
-  <h1 class="text-center" style="font-family: 'Roboto', sans-serif; font-size:2.0rem">Important Dates</h1>
-  <div class="container table-responsive" style="font-family: 'Roboto', sans-serif; padding: 20px;">
-    <table class="table table-striped">
-      <tr>
-        <thead class="thead-dark">
-
-
-          <th>Events</th>
-          <th>Date</th>
-        </thead>
-      </tr>
-      <tr>
-        <td>Paper Submission</td>
-        <td>20 February 2024 <font color = "red">(Extended Deadline)</font></td>
-      </tr>
-      <tr class="table-info">
-        <td>Notification of Acceptance</td>
-        <td>20th March 2024</td>
-      </tr>
-      <tr>
-        <td>Registration Due</td>
-        <td>30 March 2024</td>
-      </tr>
-      <tr class="table-info">
-        <td>Conference Date</td>
-        <td>10-11 May 2024</td>
-      </tr>
-    </table>
-  </div>
-  <br>
-  <div class=container>
-    <div class="row row-content">
-      <div class="col-12 col-sm-5"></div>
-      <div class="col-12 col-sm-4">
-        <a href="Registrations.html" class="btn btn-info justify-content-center"
-          style="align-items: center;">Registration Link</a>
+  <div class="container detail-card bg-white p-4">
+    <div class="title-container">
+      <div class="title-tag">
+        <h1 class="h3 text-center">Important Dates</h1>
       </div>
-      <div class="col-12 col-sm-4"></div>
+    </div>
+    <div class="container table-responsive table-container" style="font-family: 'Roboto', sans-serif; padding: 20px;">
+      <table class="table table-striped box-shadow text-center">
+        <tr class="thead-dark">
+            <th>Events</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+          <td>Paper Submission</td>
+          <!--<td>20 February 2024 <font color="red">(Extended Deadline)</font>-->
+            <td>30<sup>th</sup> October 2024</td>
+          </td>
+        </tr>
+        <tr class="table-info">
+          <td>Notification of Acceptance</td>
+          <td>30th November 2024</td>
+        </tr>
+        <tr>
+          <td>Registration Due</td>
+          <td>30th December 2024</td>
+        </tr>
+        <tr class="table-info">
+          <td>Conference Date</td>
+          <td>28-29 March 2025</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <div class=container>
+      <div class="row row-content">
+        <div class="col-12 col-sm-5"></div>
+        <div class="col-12 col-sm-4">
+          <a href="Registrations.html" class="btn btn-info justify-content-center button-shadow mb-4"
+            style="align-items: center;">Registration Link</a>
+        </div>
+        <div class="col-12 col-sm-4"></div>
+      </div>
     </div>
   </div>
   <br>
-  <footer class="footer bg-dark"></footer>
+  <footer class="footer" style="background-color: #2b69b4;">
+  </footer>
 
   <script src="js/main-js.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -87,20 +91,20 @@
   <!-- start of footer -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Get the button element
-        var scrollToTopBtn = document.getElementById('scrollToTopBtn');
-         
-        // Add a click event listener to the button
-        scrollToTopBtn.addEventListener('click', function () {
-            // Scroll to the top of the page
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // Add smooth scrolling behavior
-            });
+      // Get the button element
+      var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+      // Add a click event listener to the button
+      scrollToTopBtn.addEventListener('click', function () {
+        // Scroll to the top of the page
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Add smooth scrolling behavior
         });
+      });
     });
 
-</script>
+  </script>
 </body>
 
 </html>

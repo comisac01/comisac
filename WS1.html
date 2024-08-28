@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="ceur-ws.css">
+<title>CEUR-WS.org/Vol-XXX - Workshop on Computing and Intelligent Systems</title>
+
+<style>
+
+body {
+font-family: arial, sans-serif;
+font-size: medium;
+/*background-image: url(https://ceur-ws.org/ceurws-bg.png);           */
+margin-left: +32px;
+margin-right: +8px;
+}
+
+/* 2015-04-21/MJ: for mobile-friendly layout */
+@-ms-viewport{
+  width: device-width;
+  initial-scale: 1.0;
+}
+
+@media print {
+    body > header address {
+        display:none;
+    }
+    body > header #document-license {
+        width:19em;
+        clear:right;
+        float:right;
+        margin-top:1em !important;
+        margin-right:0;
+    }
+    #content {
+        page-break-before:always;
+    }
+}
+
+A:link {color: #404080; text-decoration: none;}  /* display of links */
+A:visited {color: #404080; text-decoration: none;} /* visited links */
+A:hover {color: #000080; text-decoration: none;} /* links under the cursor */
+:target {background-color:#FFFFFF;} /* background for current fragment */
+
+H1 {color:#000000; font-family:arial, cursive, sans-serif;}
+
+P,TABLE,TR,TD {font-family:arial,sans-serif;}
+
+UL {list-style-type: square; list-style-image: url(/ceurws-bullet-6x12.png);}
+
+LI {margin-bottom:7px;}   /* separates paper elements */
+
+PRE {color:#228120}
+
+.CEURPAGES {float:right; padding: 2px; font-size:smaller;}
+.AUXPAGES {float:right; padding: 2px; font-size:smaller;}
+
+.CEURTOC {width:90%; page-break-before:always;}    /* table of contents a bit narrower than the total page width */
+
+.CEURAUTHOR {font-style:italic;}
+.CEURAUTHORS {font-style:italic;}
+.AUXAUTHOR {font-style:normal;}
+.AUXAUTHORS {font-style:normal;}
+
+.CEURTITLE {font-weight:normal;}
+.AUXTITLE {font-weight:normal;}
+.CEURTITLE:hover {color: #006040;}   /* proper CEURTITLEs get highlighted */
+
+.CEURVOLNR {font-weight:bold; color:#404040; font-size:large;}
+
+/* write "CEUR-WS.org/" with background color before the VOLNR */
+/* will show up when printing the page */
+/* .CEURVOLNR:before{content:"CEUR-WS.org/"; color:#F5F4EF; font-size:large;} */
+
+.CEURURN {font-weight:bold; color:#404040;}
+
+/* for paper directories */
+.CEURVOLURL {font-weight:bold; color:#000080;}
+.CEURPAPERID {font-weight:bold; color:#404040;}
+
+.CEURABSTRACT {/* border-style: solid; border-width: 1px; padding: 5px 10px 5px 10px; */
+     word-wrap: break-word; margin-left: +42px; margin-right: +68px; }
+
+.unobtrusive {color: #777777; font-size: smaller;} /* unobtrusive text; for copyright notes */
+
+.copyright {font-size: x-small;} /* even smaller text in copyright notes; x-small replaces &lt;font size="-1"&gt; when base size is medium */
+
+
+#CEURWSLOGO {
+   background-image: url('./CEUR-WS-logo.png');
+   height: 100px;
+   width: 390px;
+   print-color-adjust: exact !important;                 /*Firefox*/
+}
+#CEURWSLOGO:hover {
+   background-image: url('./CEUR-WS-logo-blue.png'); 
+/*   background-image: url('./CEUR-WS-logo-xmas.png'); */
+}
+
+
+#CEURCCBY {
+   background-image: url('./cc-by_100x35.png');
+   width: 100px;
+   height: 35px;
+   print-color-adjust: exact !important;                 /*Firefox*/
+}
+
+
+</style>
+
+</head>
+<!--CEURLANG=eng -->
+<body>
+
+<table style="border: 0; border-spacing: 0; border-collapse: collapse; width: 95%">
+<tbody><tr>
+<td style="text-align: left; vertical-align: middle">
+<a href="https://ceur-ws.org/"><div id="CEURWSLOGO"></div></a>
+</td>
+<td style="text-align: right; vertical-align: middle">
+<div style="float:left" id="CEURCCBY"></div>
+<span class="CEURVOLNR">Vol-XXX</span> <br>
+<span class="CEURURN">urn:nbn:de:0074-XXX-C</span>
+<p class="unobtrusive copyright" style="text-align: justify">Copyright © 2024 for 
+the individual papers by the papers' authors. 
+Copyright © <span class="CEURPUBYEAR">2024</span> for the volume
+as a collection by its editors.
+This volume and its papers are published under the
+Creative Commons License Attribution 4.0 International
+<a href="https://creativecommons.org/licenses/by/4.0/">(<span class="CEURLIC">CC BY 4.0</span>)</a>.</p>
+</td>
+</tr>
+</tbody></table>
+
+<hr>
+
+<br><br><br>
+
+<h1><a href="https://comsia.in"><span class="CEURVOLACRONYM">Workshop on Computing and Intelligent Systems</span></a><br>
+<!-- <span class="CEURVOLTITLE">Workshop on Computing and Intelligent Systems</span></h1> -->
+<br>
+
+<h3>
+<span class="CEURFULLTITLE">Workshop Proceedings on Computing and Intelligent Systems is co-organized with International
+     Symposium on Computing and Communication Systems for Industrial Applications
+</span><br>
+<!-- co-located with <span class="CEURCOLOCATED">NONE</span> 
+(<span class="CEURCOLOCATED">COMSIA 2024</span>)--><br>
+</h3>
+<h3><span class="CEURLOCTIME">New Delhi, India, May 10-11, 2024</span>.</h3> 
+
+<br>
+<b> Edited by </b>
+<p>
+
+</p>
+<p></p><h3>
+   <a href="https://scholar.google.co.in/citations?user=MpPI1p4AAAAJ&hl=en"><span class="CEURVOLEDITOR">Deepak Gupta</span></a>, Department of CSE, Maharaja Agrasen Institute of Technology, Rohini, Delhi<br>
+   <a href="https://scholar.google.com/citations?user=aZ6bcngAAAAJ&hl=en"><span class="CEURVOLEDITOR">Aboul Ella Hassanien </span></a>, Kuwait University, Kuwait<br>
+   <a href="https://scholar.google.co.in/citations?user=zCalDU8AAAAJ&hl=en"><span class="CEURVOLEDITOR">Aditya Khamparia</span></a>, Department of Computer Science, Babasaheb Bhimrao Ambedkar University, Central University, Lucknow, UP, India<br>
+   
+</h3>
+
+
+<hr>
+
+<br><br><br>
+
+
+<!--<div class="CEURTOC">
+<a href = "Table of Content.pdf"><h2> Table of Contents </h2></a>-->
+
+<ul>
+
+
+<li id="invited2"><a href="./gallery/Preface1.pdf">
+<span class="CEURTITLE">Preface</span></a> 
+<span class="CEURPAGES">i</span> 
+<br>
+<span>
+Summary: There were 230 papers submitted for peer-review and only 30 papers were accepted as regular papers.
+</span>
+</li>
+
+</ul>
+
+<ul>
+<!-- <h3><span class="CEURFULLTITLE">Computing</span></a></h3> -->
+<!--<span class="CEURPAGES" style="color:black">01-368</span>--> <br><br>
+<li id="sample-1col"><a href="Paper 1.pdf">
+<span class="CEURTITLE">Campus Surveillance with Violence Insight and Suspect Profiling Using Image processing and Computer Vision: A Survey
+</span></a>
+<span class="CEURPAGES">01-12</span> 
+<br>
+<span class="CEURAUTHOR">Deepak N R</span>,
+<span class="CEURAUTHOR">Santosh Kumar Paital</span>,
+<span class="CEURAUTHOR">Umme Kulsum</span>, 
+<span class="CEURAUTHOR">Shaima Afreen</span>, 
+<span class="CEURAUTHOR">Shrey Verma</span>
+
+</li>
+
+<li id="sample-1col"><a href="Paper 2.pdf">
+<span class="CEURTITLE">Entity Embedding in Artificial Neural Networks: A Novel
+Approach to Sales Data Analysis and Forecasting</span></a>
+<span class="CEURPAGES">13-22</span> 
+<br>
+<span class="CEURAUTHOR">Christina Jayakumaran</span>, 
+<span class="CEURAUTHOR">Sengole Merlin</span>, 
+<span class="CEURAUTHOR">Vaishali R Kulkarni</span>,
+<span class="CEURAUTHOR">Thompson Stephan</span>,
+	<span class="CEURAUTHOR">Punitha S</span>
+</li>
+
+<li id="CEUR-Template-1col"><a href="Paper 3.pdf">
+<span class="CEURTITLE">Automated Penetration Testing: Machine Learning
+Approach</span></a>
+<span class="CEURPAGES">23-34</span> 
+<br>
+<span class="CEURAUTHOR">Jay Saini</span>,
+<span class="CEURAUTHOR">Ankita Bansal</span>
+</li>
+
+<li id="CEUR-Template-1col"><a href="Paper 4.pdf">
+<span class="CEURTITLE">Comparative Analysis for Text Summarization of Educational Websites Content using Pre-trained BART Model</span></a>
+<span class="CEURPAGES">35-50</span> 
+<br>
+<span class="CEURAUTHOR">Mamatha Mandava</span>,
+<span class="CEURAUTHOR">Dr. Surendra Reddy Vinta</span>
+</li>
+
+<li id="CEUR-Template-1col"><a href="Paper 5.pdf">
+  <span class="CEURTITLE">An evaluation of pre-trained CNN architectures for brain tumor segmentation and detection</span></a>
+  <span class="CEURPAGES">51-67</span> 
+  <br>
+  <span class="CEURAUTHOR">Venkata Kiranmai Kollipara</span>,
+  <span class="CEURAUTHOR">Dr. Surendra Reddy Vinta</span>
+  </li>
+
+  <li id="CEUR-Template-1col"><a href="Paper 6.pdf">
+    <span class="CEURTITLE">Classification of Fundus Diseases Using Hybrid Techniques Based on the Fused MobileNet and Handmade Traits</span></a>
+    <span class="CEURPAGES">68-80</span> 
+    <br>
+    <span class="CEURAUTHOR">G. Sambasiva Rao</span>,
+    <span class="CEURAUTHOR">Dr. Sagar Dhanraj Pande</span>
+
+    </li>
+
+    <li id="CEUR-Template-1col"><a href="Paper 7.pdf">
+      <span class="CEURTITLE">Comparative Analysis of Multiple Methods Utilized for Road
+Pothole Identification Using Deep Learning</span></a>
+      <span class="CEURPAGES">81-90</span> 
+      <br>
+      <span class="CEURAUTHOR">Neha Tanwar</span>,
+      <span class="CEURAUTHOR">Anil V. Turukmane</span>
+      </li>
+
+      <li id="CEUR-Template-1col"><a href="Paper 8.pdf">
+        <span class="CEURTITLE">FloraCheck: Pioneering for Leaf Disease Recognition</span></a>
+        <span class="CEURPAGES">91-106</span> 
+        <br>
+        <span class="CEURAUTHOR">Alongbar Wary</span>,
+        <span class="CEURAUTHOR">Navya Gupta</span>,
+        <span class="CEURAUTHOR">Pratha Garg</span>,
+        <span class="CEURAUTHOR">Anushka Rajoria</span>
+        </li>
+
+        <li id="CEUR-Template-1col"><a href="Paper 9.pdf">
+          <span class="CEURTITLE">Classification of Mobile Price Using Machine Learning</span></a>
+          <span class="CEURPAGES">107-118</span> 
+          <br>
+          <span class="CEURAUTHOR">Nisha Sunariya </span>,
+          <span class="CEURAUTHOR">Avinash Singh </span>,
+          <span class="CEURAUTHOR">Mehtab Alam</span>,
+          <span class="CEURAUTHOR">Vibha Gaur</span>
+          </li>
+	
+          <li id="CEUR-Template-1col"><a href="Paper 10.pdf">
+          <span class="CEURTITLE">Fraud Detection in Credit Card Using Machine Learning</span></a>
+          <span class="CEURPAGES">119-134</span> 
+          <br>
+          <span class="CEURAUTHOR">Sonam Juneja</span>,
+          <span class="CEURAUTHOR">Bhoopesh Singh Bhati </span>,
+          <span class="CEURAUTHOR"> Reema Goyal</span>,
+          <span class="CEURAUTHOR">Shikha Atwal</span>,
+	   <span class="CEURAUTHOR">Souvik Maiti</span>,
+	  <span class="CEURAUTHOR">Navneet Chaudhary</span>
+          </li>
+	
+	 <li id="CEUR-Template-1col"><a href="Paper 11.pdf">
+          <span class="CEURTITLE">Interpreting doctor's notes using handwriting recognition and
+convolutional neural networks (CNNs)</span></a>
+          <span class="CEURPAGES">135-146</span> 
+          <br>
+          <span class="CEURAUTHOR">Abhishek Choubey</span>,
+          <span class="CEURAUTHOR">Koushik Margam  </span>,
+          <span class="CEURAUTHOR">Vikas Reddy Sheelam</span>,
+          <span class="CEURAUTHOR">Shiva Ananthula</span>,
+	  <span class="CEURAUTHOR">Shruti Bhargava Choubey</span>
+          </li>
+
+	 <li id="CEUR-Template-1col"><a href="Paper 12.pdf">
+          <span class="CEURTITLE">Exploring Synonym Generation for Lexical Simplification: A
+Comparative Analysis of Static and Contextualized Word Embeddings</span></a>
+          <span class="CEURPAGES">147-160</span> 
+          <br>
+          <span class="CEURAUTHOR">Tamma RajyaLakshmi</span>,
+          <span class="CEURAUTHOR">K.S.Kuppusamy </span>
+          </li>
+
+	 <li id="CEUR-Template-1col"><a href="Paper 13.pdf">
+          <span class="CEURTITLE">CGM: A hybrid model for forecasting future stock price</span></a>
+          <span class="CEURPAGES">161-173</span> 
+          <br>
+          <span class="CEURAUTHOR">Ningyao Ningshen</span>,
+          <span class="CEURAUTHOR">Vinita Jindal</span>,
+          <span class="CEURAUTHOR">Punam Bedi</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 14.pdf">
+          <span class="CEURTITLE">Parkinson Disease prediction using Machine learning and
+		  Nature inspired Optimization technique</span></a>
+          <span class="CEURPAGES">174-186</span> 
+          <br>
+          <span class="CEURAUTHOR">Ayushi Mittal</span>,
+          <span class="CEURAUTHOR">Devendra Kumar Tayal</span>,
+          <span class="CEURAUTHOR">Charu Gupta</span>
+		<span class="CEURAUTHOR">Neha Srivastava</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 15.pdf">
+          <span class="CEURTITLE">Automatic License Plate Detection and Recognition using
+Deep Learning and Image Processing </span></a>
+          <span class="CEURPAGES">187-204</span> 
+          <br>
+          <span class="CEURAUTHOR">Pradyut Agrawal</span>,
+          <span class="CEURAUTHOR">Akshansh Jha</span>,
+          <span class="CEURAUTHOR">Ravneet Kaur</span>,
+	<span class="CEURAUTHOR">Anju Agrawal</span>,
+	<span class="CEURAUTHOR">Monika Bhattacharya</span>
+          </li>
+	
+	<li id="CEUR-Template-1col"><a href="Paper 16.pdf">
+          <span class="CEURTITLE">Multi-lingual handwritten character recognition using Deep Learning </span></a>
+          <span class="CEURPAGES">205-214</span> 
+          <br>
+          <span class="CEURAUTHOR">Harikesh Pandey</span>,
+          <span class="CEURAUTHOR">Arun Prakash Agrawal</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 17.pdf">
+          <span class="CEURTITLE">Detection of Heart Failure Using Swarm Intelligence </span></a>
+          <span class="CEURPAGES">215-225</span> 
+          <br>
+          <span class="CEURAUTHOR">Avni</span>,
+          <span class="CEURAUTHOR">Arunima Jaiswal</span>,
+	  <span class="CEURAUTHOR">Amritaya Ray</span>,
+	   <span class="CEURAUTHOR">Swati Gola</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 18.pdf">
+          <span class="CEURTITLE">A Potato Diseases Detection using Image Classification
+Models in Deep Learning Techniques </span></a>
+          <span class="CEURPAGES">226-235</span> 
+          <br>
+          <span class="CEURAUTHOR">Dr. Soumi Ghosh</span>,
+          <span class="CEURAUTHOR">Anshika Mitta</span>,
+	 <span class="CEURAUTHOR">Suryash Kumar Jha</span>
+          </li>
+	
+<li id="CEUR-Template-1col"><a href="Paper 19.pdf">
+          <span class="CEURTITLE">Land Cover Classification: A Comparative Analysis for Deep Learning Techniques </span></a>
+          <span class="CEURPAGES">236-245</span> 
+          <br>
+          <span class="CEURAUTHOR">Rohan Vaghela</span>,
+          <span class="CEURAUTHOR">Jigar Sarda</span>,
+	 <span class="CEURAUTHOR">Amit Thakkar </span>,
+	 <span class="CEURAUTHOR">Biswajit Brahma </span>,
+	 <span class="CEURAUTHOR">Akash Kumar Bhoi </span>,
+	 <span class="CEURAUTHOR">Hirva Patel </span>,
+	 <span class="CEURAUTHOR">Arpita Patel</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 20.pdf">
+          <span class="CEURTITLE">Breast Cancer Classification Using Seahorse Swarm Optimization </span></a>
+          <span class="CEURPAGES">246-257</span> 
+          <br>
+          <span class="CEURAUTHOR">Tanya Dixit</span>,
+          <span class="CEURAUTHOR">Arunima Jaiswal</span>,
+	 <span class="CEURAUTHOR">Manaswini De</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 21.pdf">
+          <span class="CEURTITLE">A Deep Learning Algorithms for Multi-Class War Event Classification </span></a>
+          <span class="CEURPAGES">258-269</span> 
+          <br>
+          <span class="CEURAUTHOR">Yashvi Popat</span>,
+          <span class="CEURAUTHOR">Utsavi Patel</span>,
+	  <span class="CEURAUTHOR">Jigar Sarda</span>,
+	 <span class="CEURAUTHOR">Biswajit Brahma </span>,
+	 <span class="CEURAUTHOR">Akash Kumar Bhoi </span>,
+	 <span class="CEURAUTHOR">Dweepna Garg </span>,
+	 <span class="CEURAUTHOR">Rohan Vaghela</span>
+	 
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 22.pdf">
+          <span class="CEURTITLE">Qualifying Lemon Scab Severity: Autoencoder and XGBoost in a Hybrid Approach</span></a>
+          <span class="CEURPAGES">270-281</span> 
+          <br>
+          <span class="CEURAUTHOR">Anshika Jain</span>,
+          <span class="CEURAUTHOR">Srajal Tiwari</span>,
+	 <span class="CEURAUTHOR">Dr. Naveen Kumar Mani</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 23.pdf">
+          <span class="CEURTITLE">Enhancing sentiment analysis accuracy through multimodal data fusion:
+		  A deep learning approach</span></a>
+          <span class="CEURPAGES">282-291</span> 
+          <br>
+	 <span class="CEURAUTHOR">Srajal Tiwari</span>,
+          <span class="CEURAUTHOR">Anshika Jain</span>, 
+	 <span class="CEURAUTHOR">Dr. Anwesha Mishra</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 24.pdf">
+          <span class="CEURTITLE">AWS-Enhanced Sentiment Analysis Using LSTM For Online Video Comments</span></a>
+          <span class="CEURPAGES">292-304</span> 
+          <br>
+          <span class="CEURAUTHOR">P Nandieswar Reddy</span>,
+          <span class="CEURAUTHOR">Sai Aswath S</span>,
+	 <span class="CEURAUTHOR">Rithvika Alapati</span>,
+		<span class="CEURAUTHOR">Dr. Beena B.M.</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 25.pdf">
+          <span class="CEURTITLE">Capturing An Optimal Trading Framework Involving
+Exponential and Second-Order Autoregressive Price Dynamics</span></a>
+          <span class="CEURPAGES">305-314</span> 
+          <br>
+          <span class="CEURAUTHOR">Vipin Kumar Pandey</span>,
+          <span class="CEURAUTHOR">Arti Singh</span>,
+	 <span class="CEURAUTHOR">Gopinath  Sahoo</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 26.pdf">
+          <span class="CEURTITLE">Detection of Acute Lymphoblastic Leukemia using Random Forest model</span></a>
+          <span class="CEURPAGES">315-323</span> 
+          <br>
+          <span class="CEURAUTHOR">Srijani Gupta</span>,
+          <span class="CEURAUTHOR">Swati Bakshi</span>,
+	 <span class="CEURAUTHOR">Rithvika Alapati</span>,
+	<span class="CEURAUTHOR">Aahana Nath</span>,
+	<span class="CEURAUTHOR">Hrudaya Kumar Tripathy</span>,
+	<span class="CEURAUTHOR">Ali Ashoor Issa</span>
+          </li>
+	
+	<li id="CEUR-Template-1col"><a href="Paper 27.pdf">
+          <span class="CEURTITLE">Automated Age and Gender Recognition in Networking
+Sites using Variable Optimized CNN Model</span></a>
+          <span class="CEURPAGES">324-333</span> 
+          <br>
+          <span class="CEURAUTHOR">Supratik Dutta</span>,
+          <span class="CEURAUTHOR">Adrita Chakraborty</span>,
+	 <span class="CEURAUTHOR">Ashish Kumar Biswal</span>,
+	<span class="CEURAUTHOR">Sushruta Mishra</span>,
+	<span class="CEURAUTHOR">Ahmed J. Obaid</span>,
+	<span class="CEURAUTHOR">Mohammed Ayad Alkhafaji</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 28.pdf">
+          <span class="CEURTITLE">Diseased Skin Dermis Approximation and Validation in
+Remote Space Using a Cognitive Network with Multiple Hidden Layers</span></a>
+          <span class="CEURPAGES">334-345</span> 
+          <br>
+          <span class="CEURAUTHOR">Shruti Debnath</span>,
+          <span class="CEURAUTHOR">Tasnim Ur Rahaman Anas</span>,
+	 <span class="CEURAUTHOR">Bhanu Pratap Singh</span>,
+	<span class="CEURAUTHOR">Hrudaya Kumar Tripathy</span>,
+	<span class="CEURAUTHOR">Ali Hasan Dheidan</span>
+	
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 29.pdf">
+          <span class="CEURTITLE">Misleading and Ambiguous Factual Information Detection Using
+an Ensemble Classifier with Voting Average Approach</span></a>
+          <span class="CEURPAGES">346-357</span> 
+          <br>
+          <span class="CEURAUTHOR">Sheetal Panda</span>,
+          <span class="CEURAUTHOR">Shrimoyee Banerjee </span>,
+	 <span class="CEURAUTHOR">Sushruta Mishra</span>,
+	<span class="CEURAUTHOR">Najlaa Nsrulaah Faris</span>
+          </li>
+
+	<li id="CEUR-Template-1col"><a href="Paper 30.pdf">
+          <span class="CEURTITLE">NADR-Net: A Deep Learning Framework for
+Predicting Neurological Adverse Drug Reactions Using 17 Molecular Descriptors</span></a>
+          <span class="CEURPAGES">358-368</span> 
+          <br>
+          <span class="CEURAUTHOR">Anushka Chaurasia</span>,
+          <span class="CEURAUTHOR">Deepak Kumar </span>,
+	 <span class="CEURAUTHOR">Yogita</span>
+          </li>
+	<br><br>
+
+	<!--<span class="CEURPAGES" style="color:black">369-452</span>--> <br><br>
+	
+	
+
+	
+  </ul>
+
+</div>
+
+<hr>
+<span class="unobtrusive">
+2024-03-20: submitted by Dr. Deepak Gupta, 
+            metadata incl. bibliographic data published under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0</a><br>
+<span class="CEURPUBDATE">xxxx-xx-xx</span>: published on CEUR Workshop Proceedings (CEUR-WS.org, ISSN 1613-0073)
+	|<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fceur-ws.org%2FVol-XXX%2F">valid HTML5</a>|
+</span>
+
+</body></html>
+
