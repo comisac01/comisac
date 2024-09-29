@@ -108,6 +108,9 @@ window.onload = function (e) {
                           </div>
                         </li>  
                         <li class="nav-item">
+                          <a class="nav-link text-white" href="sessions.html">Special Sessions</a>
+                        </li>
+                        <li class="nav-item">
                           <a class="nav-link text-white" href="Registrations.html">Registrations</a>
                         </li>
                         <li class="nav-item">
