@@ -2,6 +2,7 @@ window.onload = function (e) {
   $(document).ready(function () {
     $('.jumbotron').append(`
     <span id="jumbo-images1">
+    <i><img src="kiit images/comsia.jpg" alt="KIITlogo" class="img-fluid jumbotron-img-top rounded-4 rounded box-shadow" width="120"></i><br><br>
     <i><img src="kiit images/du.jpg" alt="KIITlogo" class="img-fluid jumbotron-img-top rounded-4 rounded box-shadow" width="120"></i> <br><br>
     <i> <img src="kiit images/rajguru.png" alt="" class="img-fluid jumbotron-img-bottom rounded-4 rounded box-shadow" width="120"></i>
 
