@@ -8,12 +8,12 @@ window.onload = function (e) {
 
   </span>
   <div class="jumbo-details">
-    <h1><b>INTERNATIONAL CONFERENCE ON COMPUTING SYSTEMS AND INTELLIGENT APPLICATIONS </b><br> (ComSIA 2025) <br></h1>
+    <h1><b>INTERNATIONAL CONFERENCE ON COMPUTING SYSTEMS AND INTELLIGENT APPLICATIONS </b><br> (ComSIA 2026) <br></h1>
     <hr>
     <h2 class="">
-      March 28-29<sup>th</sup>,2025
+      March 20-21<sup>st</sup>,2026
     </h2> 
-    <h4 class="">COMSIA 2025 WILL BE JOINTLY ORGANISED BY SCHOOL OF <br> OPEN LEARNING, UNIVERSITY OF DELHI AND <br> SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, <br> UNIVERSITY OF DELHI <br></h4>
+    <h4 class="">ComSIA 2026 WILL BE JOINTLY ORGANISED BY SCHOOL OF <br> OPEN LEARNING, UNIVERSITY OF DELHI AND <br> SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, <br> UNIVERSITY OF DELHI <br></h4>
     <p id="demo" style="font-size:1.4rem;font-weight:500"></p>
   </div>
   <div class="right-part-container">
@@ -140,9 +140,19 @@ window.onload = function (e) {
                     <li class="nav-item">
                       <a class="nav-link text-white" href="downloads.html">Downloads</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="prevconf.html">Previous Conference (ComSIA 2024)</a>
-                    </li>
+                    <li class="nav-item dropdown dmenu">
+                          <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                            Previous Conference
+                          </a>
+                          <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item text-white" href="prevconf2025.html">ComSIA 2025</a>
+                            <div class="dropdown-divider"></div> 
+                            <a class="dropdown-item text-white" href="prevconf2024.html">ComSIA 2024</a>
+                            <!--<div class="dropdown-divider"></div>-->
+                                                       
+                          </div>
+                        </li>
+                    
                     <!-- <li class="nav-item">
                     <a class="nav-link text-white" href="Gallary.html">Gallery</a>
                   </li> -->
@@ -197,7 +207,7 @@ window.onload = function (e) {
 
 // me commented
 // Set the date we're counting down to
-var countDownDate = new Date("March 28, 2025 12:00:00").getTime();
+var countDownDate = new Date("March 20, 2026 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
