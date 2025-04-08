@@ -64,13 +64,14 @@ window.onload = function (e) {
                 <a class="btn btn-social-icon bg-light text-primary mr-2 foot-icon" href="mailto:icicc.editor@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
             </div>
         </div>
-        <!--<div class="row justify-content-center">
+        <div class="row justify-content-center">
           <div class="col-auto">
 
-        <p class="footer_p_i_h2_a footer_p_i_a">Copyright © Intelligent Communication and Computational Research Laboratory|<a href="##"> All Rights Reserved | </a></p>
+        <p class="footer_p_i_h2_a footer_p_i_a" style="text-align:center;">The Microsoft CMT service was used for managing the peer-reviewing process for this conference.<br/>
+This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
         
             </div>
-            </div>--!>
+            </div>
       </div>
    </div>
 </div>
