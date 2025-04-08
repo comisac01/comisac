@@ -154,7 +154,31 @@
           Submission
           Link</a> -->
       </div>
+      
     </div>
+    
+  </div>
+  <div class="container detail-card bg-white">
+    <div class="row row-content">
+      <div class="title-container">
+        <div class="title-tag">
+          <h1 class="h3 text-center">Previous Keynote Speakers</h1>
+        </div>
+      </div>
+      <div class="col-12 col-sm col-md p-4 mt-4">
+        <section class="keynote-speakers">
+          <div class="tabs" id="yearTabs">
+            <!-- Buttons added dynamically -->
+          </div>
+      
+          <div class="cards" id="speakerCards">
+            <!-- Speaker cards added dynamically -->
+          </div>
+        </section>
+      </div>
+      
+    </div>
+    
   </div>
   <!-- end of content -->
   <br>
@@ -303,6 +327,65 @@
     });
   </script>
   <script src="js/main-js.js"></script>
+  <script>
+   const speakersData = {
+  "2025": [
+    { desc: "Mr. Udayan Kanade, CEO, Oneirix Labs, USA", image: "/speaker-images/udayan.jpg" },
+    { desc: "Mr. Aninda Bose, Executive Editor, Springer Nature Group, London, United Kingdom", image: "/speaker-images/aninda.jpg" },
+    { desc: "Prof. Sudan Jha, Kathmandu University, Nepal", image: "/speaker-images/sudan.jpg" },
+    { desc: "Prof. Vivek Ashok Bohara, Professor, ECE Department, IIIT Delhi, India", image: "/speaker-images/vivek.jpg" },
+    { desc: "Prof. Milan Tuba, Singidunun University, Serbia", image: "/speaker-images/milan.jpg" },
+    { desc: "Prof. Bhuvan Unhelkar, University of South Florida, USA", image: "/speaker-images/bhuvan.jpg" },
+    { desc: "Dr. Eva Tuba, Trinity University, TX, USA", image: "/speaker-images/eva.jpg" },
+    { desc: "Prof. Polkowski Zdzislaw, Jan Wyzykowski University, Poland", image: "/speaker-images/polkowski.jpg" }
+  ],
+  "2024": [
+    { desc: "Prof. Dr. Robertas Damasevicius, Kaunas University of Technology, Lithuania", image: "/speaker-images/robertas.webp" },
+    { desc: "Dr. Lalit Garg, University of Malta, Malta", image: "/speaker-images/lalit.jpg" },
+    { desc: "Prof. Gwanggil Jeon, Incheon National University, Korea", image: "/speaker-images/gwanggil.jpg" },
+    { desc: "Dr. Korhan Cengiz, University of Zagreb, Croatia", image: "/speaker-images/korhan.jpg" }
+  ]
+
+
+};
+
+const yearTabs = document.getElementById('yearTabs');
+const speakerCards = document.getElementById('speakerCards');
+
+function createTabs() {
+  const years = Object.keys(speakersData).reverse();
+  years.forEach((year, index) => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-button';
+    if (index === 0) btn.classList.add('active');
+    btn.innerText = year;
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      showSpeakers(year);
+    });
+    yearTabs.appendChild(btn);
+  });
+
+  showSpeakers(years[0]); // Show first year's speakers initially
+}
+
+function showSpeakers(year) {
+  speakerCards.innerHTML = '';
+  speakersData[year].forEach(speaker => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <img class="card-image" src="${speaker.image}" alt="${speaker.desc}" />
+      <p class="card-desc">${speaker.desc}</p>
+    `;
+    speakerCards.appendChild(card);
+  });
+}
+
+createTabs();
+
+  </script>
 </body>
 
 </html>
