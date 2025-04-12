@@ -18,7 +18,12 @@ window.onload = function (e) {
   </div>
   <div class="right-part-container">
     <div class="right-part box-shadow">
-      <img src="./gallery/university.jpg" alt="">
+      <img 
+  src="./gallery/university.png" 
+  alt="University Image" 
+  style="width: 100%; object-fit: cover; display: block; margin:-50px auto;"
+>
+
     </div>
   </div>
       `);
@@ -36,7 +41,7 @@ window.onload = function (e) {
                 <li><a href="call_for_papers.html" class="foot-link">Call for Papers</a></li>
                 <li><a href="important_dates.html" class="foot-link">
                 Important Dates</a></li>
-                <li><a href="#" class="foot-link">
+                <li><a href="https://cmt3.research.microsoft.com/ComSIA2026" class="foot-link">
                 CMT portal</a></li>
             </ul>
         </div>

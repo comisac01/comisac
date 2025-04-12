@@ -197,7 +197,7 @@ body {
 .right-part-container {
   position: absolute;
   width: 55%;
-  max-width: 800px;
+  max-width: 700px;
   aspect-ratio: 4 / 3;
   top: -60px;
   right: -110px;
