@@ -4,11 +4,16 @@ window.onload = function (e) {
     <span id="jumbo-images1">
     <i><img src="kiit images/comsia.jpg" alt="KIITlogo" class="img-fluid jumbotron-img-top rounded-4 rounded box-shadow" width="120"></i><br><br>
     <i><img src="kiit images/du.jpg" alt="KIITlogo" class="img-fluid jumbotron-img-top rounded-4 rounded box-shadow" width="120"></i> <br><br>
-    <i> <img src="kiit images/rajguru.png" alt="" class="img-fluid jumbotron-img-bottom rounded-4 rounded box-shadow" width="120"></i>
+    <i> <img src="kiit images/rajguru.png" alt="" class="img-fluid jumbotron-img-bottom rounded-4 rounded box-shadow" width="120"></i><br><br>
+    <i> <img src="kiit images/springer.png" alt="" class="img-fluid jumbotron-img-bottom rounded-4 rounded box-shadow" width="120"></i>
 
   </span>
   <div class="jumbo-details">
     <h1><b>INTERNATIONAL CONFERENCE ON COMPUTING SYSTEMS AND INTELLIGENT APPLICATIONS </b><br> (ComSIA 2026) <br></h1>
+    <h2 class="">
+      Springer LNNS Approved Conference
+    </h2> 
+    
     <hr>
     <h2 class="">
       March 20-21<sup>st</sup>,2026
