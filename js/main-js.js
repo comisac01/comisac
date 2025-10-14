@@ -18,9 +18,15 @@ window.onload = function (e) {
     <h2 class="">
       March 20-21<sup>st</sup>,2026
     </h2> 
-    <h4 class="">ComSIA 2026 WILL BE JOINTLY ORGANISED BY SCHOOL OF <br> OPEN LEARNING, UNIVERSITY OF DELHI AND <br> SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, <br> UNIVERSITY OF DELHI <br></h4>
+    <h4 class="">ComSIA 2026 WILL BE JOINTLY ORGANISED BY SCHOOL OF <br/> OPEN LEARNING, UNIVERSITY OF DELHI AND <br/> SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, <br/> UNIVERSITY OF DELHI AND<br/>SILICON UNIVERSITY, ODISHA</h4>
     <p id="demo" style="font-size:1.4rem;font-weight:500"></p>
+    <span id="jumbo-images1">
+    <i><img src="gallery/aicte.jpg" alt="KIITlogo" class="img-fluid jumbotron-img-top rounded-4 rounded box-shadow" width="120"></i><br><br>
+    <i><img src="gallery/idea.png" alt="KIITlogo" class="img-fluid jumbotron-img-top rounded-4 rounded box-shadow" width="120" height="120"></i> <br><br>
+    <i> <img src="gallery/silicon.jpg" alt="" class="img-fluid jumbotron-img-bottom rounded-4 rounded box-shadow" width="120"></i><br><br>
+  </span>
   </div>
+  
   <div class="right-part-container">
     <div class="right-part box-shadow">
       <img 
