@@ -155,6 +155,9 @@ This service was provided for free by Microsoft and they bore all expenses, incl
                       <a class="nav-link text-white " href="conference_venue.html">Conference Venue</a>
                     </li>
                     <li class="nav-item">
+                      <a class="nav-link text-white " href="ideathon.html">Ideathon 2026</a>
+                    </li>
+                    <li class="nav-item">
                       <a class="nav-link text-white" href="downloads.html">Downloads</a>
                     </li>
                     <li class="nav-item dropdown dmenu">
