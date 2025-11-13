@@ -152,6 +152,9 @@ This service was provided for free by Microsoft and they bore all expenses, incl
                       
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-white" href="invited_speakers.html"> Invited Speakers</a>
+                      </li>
+                    <li class="nav-item">
                       <a class="nav-link text-white " href="conference_venue.html">Conference Venue</a>
                     </li>
                     <li class="nav-item">
