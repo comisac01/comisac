@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ComSAI - Registration</title>
+</head>
+
+<body>
+    <!-- scroll to top -->
+    <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="jumbotron">
+    </div>
+    <nav class="navbar navbar-expand-sm sticky-top navbar-color"></nav>
+    <br>
+    <div class="container detail-card bg-white">
+    <div class="row row-content">
+      <div class="title-container">
+        <div class="title-tag">
+          <h1 class="h3 text-center">Invited Speakers</h1>
+        </div>
+      </div>
+      <div class="col-12 col-sm col-md p-4 mt-4">
+        <section class="keynote-speakers">
+          <div class="tabs" id="yearTabs">
+            <!-- Buttons added dynamically -->
+          </div>
+      
+          <div class="cards" id="speakerCards">
+            <!-- Speaker cards added dynamically -->
+          </div>
+        </section>
+      </div>
+      
+    </div>
+    
+  </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <!-- start of footer -->
+    <footer class="footer" style="background-color: #2b69b4;">
+    </footer>
+
+    <script src="js/main-js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- start of footer -->
+     <script>
+   const speakersData = {
+  "2024": [
+    { desc: "Ishu Anand Jaiswal, Apple, Software Engineering Manager", image: "./gallery/invited-speakers/ishu.jpg" },
+  ]
+
+
+};
+
+const yearTabs = document.getElementById('yearTabs');
+const speakerCards = document.getElementById('speakerCards');
+
+function createTabs() {
+  const years = Object.keys(speakersData).reverse();
+  years.forEach((year, index) => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-button';
+    if (index === 0) btn.classList.add('active');
+    btn.innerText = year;
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      showSpeakers(year);
+    });
+    yearTabs.appendChild(btn);
+  });
+
+  showSpeakers(years[0]); // Show first year's speakers initially
+}
+
+function showSpeakers(year) {
+  speakerCards.innerHTML = '';
+  speakersData[year].forEach(speaker => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <img class="card-image" src="${speaker.image}" alt="${speaker.desc}" />
+      <p class="card-desc">${speaker.desc}</p>
+    `;
+    speakerCards.appendChild(card);
+  });
+}
+
+createTabs();
+
+  </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the button element
+            var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+            // Add a click event listener to the button
+            scrollToTopBtn.addEventListener('click', function () {
+                // Scroll to the top of the page
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Add smooth scrolling behavior
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
