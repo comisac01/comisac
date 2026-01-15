@@ -163,6 +163,9 @@ This service was provided for free by Microsoft and they bore all expenses, incl
                     <li class="nav-item">
                       <a class="nav-link text-white" href="downloads.html">Downloads</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="awards.html">Awards</a>
+                    </li>
                     <li class="nav-item dropdown dmenu">
                           <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
                             Previous Conference
