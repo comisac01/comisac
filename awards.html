@@ -38,6 +38,54 @@
             background-color: #ffffff;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
         }
+        
+
+.section-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: #1f2937;
+}
+
+.section-subtitle {
+  color: #6b7280;
+  max-width: 700px;
+  margin: auto;
+}
+
+.process-step h4 {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.process-step p {
+  color: #374151;
+  line-height: 1.7;
+}
+
+.divider {
+  height: 1px;
+  background: #dee2e6;
+  margin: 35px 0;
+}
+
+.criteria-table th {
+  background: #0d6efd;
+  color: #fff;
+  font-weight: 600;
+}
+
+.criteria-table td {
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 1.7rem;
+  }
+}
+
     </style>
 </head>
 
@@ -73,27 +121,211 @@
 
       <hr class="my-4">
 
-      <!-- Academic Awards -->
+      <section class="selection-process py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Selection Process Overview</h2>
+      <p class="section-subtitle">A transparent, rigorous, and multi-stage evaluation framework</p>
+    </div>
+
+    <!-- Process Steps -->
+    <div class="process-step">
+      <h4>Call for Nominations</h4>
+      <p>
+        Nominations are invited from individual professionals, research teams, higher education institutions,
+        innovation centers, start-ups, corporate units, and incubators.
+      </p>
+      <p>
+        Entries may be submitted through self-nomination, peer or professional recommendation,
+        institutional leadership, or Advisory Council recommendations. All nominations must be
+        supported by verifiable documentation and evidence of contribution.
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="process-step">
+      <h4>Preliminary Review & Eligibility Check</h4>
+      <p>
+        Each nomination undergoes an initial screening to verify eligibility, completeness,
+        and relevance to the selected award category.
+      </p>
+      <p>
+        Submissions lacking required documentation, failing eligibility norms,
+        or falling outside the award scope will not proceed further.
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="process-step">
+      <h4>Expert Scrutiny & Evaluation</h4>
+      <p>
+        Eligible nominations are evaluated by an eminent jury of academicians,
+        senior researchers, industry leaders, policy advisors, and global domain experts.
+      </p>
+      <p class="font-weight-bold mb-3">Selection Criteria Framework</p>
+
+      <!-- Responsive Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered criteria-table">
+          <thead>
+            <tr>
+              <th>Criterion</th>
+              <th>Focus Area</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Original Contribution & Thought Leadership</td>
+              <td>Novel ideas, intellectual depth, advancement of knowledge</td>
+            </tr>
+            <tr>
+              <td>Measurable Impact & Value Creation</td>
+              <td>Demonstrated outcomes and real-world relevance</td>
+            </tr>
+            <tr>
+              <td>Technical Depth & Professional Excellence</td>
+              <td>Rigor, quality, and domain expertise</td>
+            </tr>
+            <tr>
+              <td>Implementation Effectiveness</td>
+              <td>Practical execution, efficiency, reliability</td>
+            </tr>
+            <tr>
+              <td>Leadership & Collaborative Approach</td>
+              <td>Team building, partnerships, mentorship</td>
+            </tr>
+            <tr>
+              <td>Sustainability & Long-Term Relevance</td>
+              <td>Scalability, continuity, future readiness</td>
+            </tr>
+            <tr>
+              <td>Ethical Conduct & Social Responsibility</td>
+              <td>Responsible innovation and societal sensitivity</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-3">
+        Each criterion is evaluated independently to ensure a balanced assessment
+        of academic merit, industry relevance, and societal value.
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="process-step">
+      <h4>Consolidation & Final Recommendation</h4>
+      <p>
+        Based on cumulative evaluations, a shortlist of high-ranking nominations is prepared.
+        Scoring trends, expert observations, and supporting evidence are carefully reviewed
+        during final consolidation.
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="process-step">
+      <h4>Final Approval & Ratification</h4>
+      <p>
+        Final selections are ratified by the Awards Steering Committee comprising
+        senior academicians, industry veterans, and independent observers.
+      </p>
+      <p>
+        Only nominations demonstrating exceptional merit, credibility,
+        and sustained impact are approved. The committee reserves the right
+        to withhold or reclassify awards if standards are unmet.
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="process-step">
+      <h4>Transparency & Integrity Assurance</h4>
+      <p>
+        The selection process follows strict principles of fairness,
+        confidentiality, and conflict-of-interest management.
+        Jury decisions are final and binding to preserve the prestige
+        and integrity of the awards.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+      <!-- Awards -->
+       <div class="text-center mb-5">
+      <h2 class="section-title">Award Categories</h2>
+    </div>
+     
+      <!-- Industry Awards -->
       <section class="mb-5">
-        <h4 class="font-weight-bold">Award Categories</h4>
+        <h4 class="font-weight-bold">Academic Excellence & Leadership Awards</h4>
         <div id="academic-awards" class="row"></div>
       </section>
 
-      <!-- Industry Awards -->
       <section class="mb-5">
-        <h4 class="font-weight-bold">⚙️ Industry Excellence Awards</h4>
-        <p class="text-muted">
-          To bridge the gap between academia and industry, ComSIA 2026 introduces Industry-Specific
-          Excellence Awards recognizing applied research, innovation, and real-world impact.
-        </p>
+        <h4 class="font-weight-bold">Research, Innovation & Impact Awards</h4>
+        <div id="research-awards" class="row"></div>
+      </section>
+
+      <section class="mb-5">
+        <h4 class="font-weight-bold">Innovation & Entrepreneurship Awards</h4>
+        <div id="innovation-awards" class="row"></div>
+      </section>
+
+      <section class="mb-5">
+        <h4 class="font-weight-bold">Academia–Industry Synergy Awards</h4>
         <div id="industry-awards" class="row"></div>
       </section>
+
+      <section class="mb-5">
+        <h4 class="font-weight-bold"> Institutional Distinction Awards</h4>
+        <div id="institutional-awards" class="row"></div>
+      </section>
+
+      <section class="mb-5">
+        <h4 class="font-weight-bold">Artificial Intelligence & Advanced Technologies Awards</h4>
+        <div id="ai-awards" class="row"></div>
+      </section>
+
+      <section class="mb-5">
+        <h4 class="font-weight-bold">Cloud, Data & Digital Platforms Awards</h4>
+        <div id="cloud-awards" class="row"></div>
+      </section>
+
+      <section class="mb-5">
+        <h4 class="font-weight-bold">Manufacturing & Industry 4.0 Awards</h4>
+        <div id="manufacturing-awards" class="row"></div>
+      </section>
+
+      <section class="mb-5">
+        <h4 class="font-weight-bold">Software & Enterprise Solutions Awards</h4>
+        <div id="software-awards" class="row"></div>
+      </section>
+
+      <section class="mb-5">
+        <h4 class="font-weight-bold">SAP Cloud & Enterprise Digital Transformation Awards</h4>
+        <div id="sap-awards" class="row"></div>
+      </section>
+
+      <section class="mb-5">
+        <h4 class="font-weight-bold">Special Recognition Awards</h4>
+        <div id="special-recognition-awards" class="row"></div>
+      </section>
+
+
 
       <hr class="my-4">
 
       <!-- Open Nominations -->
       <section class="mb-5">
-        <h4 class="font-weight-bold">✳️ Open Nominations and New Award Proposals</h4>
+        <div class="text-center mb-5">
+      <h2 class="section-title">Open Nominations and New Award Proposals</h2>
+    </div>
         <p>
           To encourage inclusivity and innovation, nominators may also propose new award categories
           not listed above. Such nominations should be justified with:
@@ -110,7 +342,9 @@
 
       <!-- Selection Process -->
       <section class="mb-5">
-        <h4 class="font-weight-bold">🧩 Selection and Evaluation Process</h4>
+        <div class="text-center mb-5">
+      <h2 class="section-title">Selection and Evaluation Process</h2>
+    </div>
         <ol>
           <li><strong>Call for Nominations:</strong> Peer, advisory, or self-nomination.</li>
           <li><strong>Initial Screening (2–3 Days):</strong> Eligibility review.</li>
@@ -136,7 +370,10 @@
 
       <!-- Recognition -->
       <section class="mb-5">
-        <h4 class="font-weight-bold">🎓 Recognition and Benefits</h4>
+        <div class="text-center mb-5">
+      <h2 class="section-title">Recognition and Benefits</h2>
+    </div>
+        
         <ul>
           <li>Official Certificate of Excellence</li>
           <li>Commemorative Plaque</li>
@@ -147,7 +384,10 @@
 
       <!-- Commitment -->
       <section class="mb-5">
-        <h4 class="font-weight-bold">🌏 Commitment to Excellence</h4>
+        <div class="text-center mb-5">
+      <h2 class="section-title">Commitment to Excellence</h2>
+    </div>
+        
         <p>
           ComSIA 2026 reaffirms its dedication to advancing innovation and collaboration.
         </p>
@@ -157,7 +397,10 @@
 
       <!-- Important Dates -->
       <section>
-        <h4 class="font-weight-bold">🗓️ Important Dates</h4>
+        <div class="text-center mb-5">
+      <h2 class="section-title">Important Dates</h2>
+    </div>
+        
         <div class="row">
           <div class="col-md-6 mb-3">
             <div class="border rounded p-3 text-center">
@@ -190,25 +433,199 @@
   </footer>
   <!-- Dynamic Awards Script-->
   <script>
-    const academicAwards = [
-      { title: "Best Paper Award", desc: "Exceptional originality, technical merit, and potential for significant impact.", extra: "Selection based on reviewer evaluations, technical depth, and presentation quality." },
-      { title: "Best Student Paper Award", desc: "Outstanding paper authored and presented by a student.", extra: "Eligibility: First author must be a full-time student." },
-      { title: "Best Oral Presentation Award", desc: "Most engaging oral presentation." },
-      { title: "Best Poster Presentation Award", desc: "Most visually appealing poster." },
-      { title: "Young Researcher Award", desc: "Early-career research excellence." },
-      { title: "Outstanding Reviewer Award", desc: "Exceptional review contributions." },
-      { title: "Outstanding Contribution Award", desc: "Exceptional dedication to the conference." }
-    ];
+const academicAwards = [
+  { title: "Global Academic Legacy Award", desc: "Lifetime contribution to global academic excellence and leadership." },
+  { title: "Distinguished Teaching Excellence Award", desc: "Exceptional impact through sustained teaching excellence." },
+  { title: "Academic Leadership Excellence Award", desc: "Outstanding leadership in academic institutions." },
+  { title: "Visionary Academic Leadership Award", desc: "Transformational and future-oriented academic leadership." },
+  { title: "Scholar Mentorship Excellence Award (UG / PG / PhD)", desc: "Excellence in mentoring students across academic levels." },
+  { title: "Innovative Teaching Practices Award", desc: "Adoption of innovative and effective teaching methodologies." },
+  { title: "Outstanding Academic Contributor Award", desc: "Significant contributions to academic growth and quality." },
+  { title: "Institutional Leadership Excellence Award (Principal / Director)", desc: "Exemplary institutional leadership and governance." },
+  { title: "Strategic Academic Governance Award", desc: "Excellence in strategic academic planning and governance." },
+  { title: "Rising Star in Academia Award", desc: "Emerging academic leader with exceptional promise." },
+  { title: "Future-Ready Curriculum Innovation Award", desc: "Curriculum aligned with future skills and industry needs." },
+  { title: "Thought Leadership in Education Award", desc: "Influential thought leadership shaping modern education." },
+  { title: "Experiential Learning Excellence Award", desc: "Excellence in hands-on and experiential learning." },
+  { title: "Equity & Inclusive Education Leadership Award", desc: "Leadership in inclusive and equitable education." },
+  { title: "Digital Teaching Champion Award", desc: "Outstanding use of digital technologies in education." },
+  { title: "NEP 2020 Implementation Excellence Award", desc: "Excellence in implementing NEP 2020 reforms." },
+  { title: "Global Classroom Leadership Award", desc: "Leadership in global and cross-border education initiatives." },
+  { title: "Outcome-Based Education Excellence Award", desc: "Effective implementation of outcome-based education systems." }
+];
 
-    const industryAwards = [
-      { title: "Cloud Computing Innovation Awards", desc: "Advancing cloud architecture and security." },
-      { title: "LLM Application Awards", desc: "Innovative real-world LLM applications." },
-      { title: "Database Excellence Awards", desc: "Breakthroughs in data management." },
-      { title: "SAP Innovation Awards", desc: "Enterprise system advancements." },
-      { title: "AI/ML Industry Awards", desc: "AI-driven industrial solutions." },
-      { title: "Emerging Technology Awards", desc: "Blockchain, IoT, Quantum & Robotics." },
-      { title: "Industry–Academia Collaboration Awards", desc: "Applied research partnerships." }
-    ];
+const researchAwards = [
+  { title: "Research Excellence & Innovation Award", desc: "Outstanding research quality and innovation." },
+  { title: "Early Career Research Distinction Award (Under 35)", desc: "Exceptional research achievements by early-career researchers." },
+  { title: "Doctoral Research Excellence Award", desc: "Outstanding doctoral-level research contribution." },
+  { title: "Master’s Research Merit Award", desc: "Excellence in postgraduate research." },
+  { title: "Translational Research Innovation Award", desc: "Research translated into real-world applications." },
+  { title: "High-Impact Scholarly Contribution Award", desc: "Scholarly work with significant impact." },
+  { title: "Global Research Partnership Award", desc: "Excellence in international research collaboration." },
+  { title: "Convergent Science Excellence Award", desc: "Interdisciplinary research excellence." },
+  { title: "Cross-Domain Research Leadership Award", desc: "Leadership in cross-domain research." },
+  { title: "Women Scholars Leadership Award", desc: "Leadership among women researchers." },
+  { title: "Promising Researcher Recognition Award", desc: "Recognition of high-potential researchers." },
+  { title: "Research Mentorship Excellence Award", desc: "Excellence in research mentorship." },
+  { title: "Intellectual Property Achievement Award", desc: "Outstanding patent and IP contributions." },
+  { title: "Societal Impact Research Award", desc: "Research delivering societal benefit." },
+  { title: "AI-Driven Research Excellence Award", desc: "Excellence in AI-powered research." },
+  { title: "Sustainable Development Research Award", desc: "Research aligned with sustainability goals." },
+  { title: "Healthcare & Biomedical Research Excellence Award", desc: "Excellence in healthcare and biomedical research." },
+  { title: "Strategic & Defense Research Excellence Award", desc: "Outstanding strategic and defense research." }
+];
+
+const innovationAwards = [
+  { title: "High-Growth Innovation Venture Award", desc: "High-impact innovation with growth potential." },
+  { title: "Breakthrough Innovation Leadership Award", desc: "Leadership behind breakthrough innovations." },
+  { title: "Social Transformation Excellence Award", desc: "Innovation driving social transformation." },
+  { title: "Entrepreneurial Ecosystem Excellence Award", desc: "Building strong entrepreneurial ecosystems." },
+  { title: "Emerging Tech Entrepreneur Award", desc: "Entrepreneurship in emerging technologies." },
+  { title: "Women Entrepreneurship Excellence Award", desc: "Excellence in women-led ventures." },
+  { title: "Innovation Catalyst in Education Award", desc: "Driving innovation in education." },
+  { title: "Student Venture Excellence Award", desc: "Outstanding student-led startup or venture." },
+  { title: "Digital Learning Innovation Award", desc: "Innovative digital learning solutions." },
+  { title: "Impact Entrepreneurship Award", desc: "Entrepreneurship with measurable impact." },
+  { title: "Sustainable Innovation Leadership Award", desc: "Leadership in sustainable innovation." },
+  { title: "Continuous Innovation Excellence Award", desc: "Sustained innovation excellence." },
+  { title: "DeepTech Innovation Award", desc: "Innovation in deep technologies." },
+  { title: "AI Start-Up of the Year Award", desc: "Outstanding AI-based startup." },
+  { title: "HealthTech & BioTech Innovation Award", desc: "Innovation in healthcare and biotech." },
+  { title: "FinTech Innovation Excellence Award", desc: "Excellence in fintech innovation." }
+];
+
+const academiaIndustryAwards = [
+  { title: "Strategic Partnership Excellence Award", desc: "Excellence in academia–industry partnerships." },
+  { title: "Collaborative R&D Excellence Award", desc: "Outstanding collaborative R&D initiatives." },
+  { title: "Research Commercialization Excellence Award", desc: "Effective commercialization of research." },
+  { title: "Joint IP & Product Innovation Award", desc: "Successful joint IP and product innovation." },
+  { title: "Workforce Readiness Excellence Award", desc: "Developing industry-ready talent." },
+  { title: "Experiential Industry Learning Excellence Award", desc: "Industry-integrated learning excellence." },
+  { title: "Industry Knowledge Integration Award", desc: "Integration of industry expertise into academia." },
+  { title: "Long-Term Industry Alliance Excellence Award", desc: "Sustained industry collaboration." },
+  { title: "Corporate Academic Mentor Excellence Award", desc: "Excellence in corporate mentorship." },
+  { title: "Live Industry Project Excellence Award", desc: "Outstanding live industry projects." },
+  { title: "Strategic Academic Advisory Impact Award", desc: "High-impact academic advisory roles." },
+  { title: "Industry 5.0 Readiness Excellence Award", desc: "Preparing institutions for Industry 5.0." },
+  { title: "Global Industry Engagement Award", desc: "Excellence in global industry engagement." },
+  { title: "Corporate Skilling Leadership Award", desc: "Leadership in corporate skilling initiatives." }
+];
+
+const institutionalAwards = [
+  { title: "Excellence in Higher Education Award", desc: "Overall excellence in higher education." },
+  { title: "Engineering Education Leadership Award", desc: "Leadership in engineering education." },
+  { title: "Business Education Excellence Award", desc: "Excellence in business education." },
+  { title: "Emerging University of Excellence Award", desc: "Rapidly emerging high-performing university." },
+  { title: "Smart Campus Transformation Award", desc: "Smart and digital campus initiatives." },
+  { title: "Career Outcomes Excellence Award", desc: "Outstanding graduate career outcomes." },
+  { title: "Community Engagement Excellence Award", desc: "Impactful community engagement." },
+  { title: "Startup & Research Friendly Campus Award", desc: "Strong startup and research ecosystem." },
+  { title: "Sustainable Campus Excellence Award", desc: "Sustainability-driven campus initiatives." },
+  { title: "Emerging Technology Leadership Center Award", desc: "Leadership in emerging technology education." },
+  { title: "Alumni Relations & Impact Excellence Award", desc: "Strong alumni engagement and impact." },
+  { title: "Global Ranking Performance Excellence Award", desc: "Outstanding global ranking performance." },
+  { title: "Research-Intensive University Award", desc: "High-impact research university." },
+  { title: "International Student Support Excellence Award", desc: "Excellence in international student support." }
+];
+
+const aiAwards = [
+  { title: "AI Innovation Leadership Award", desc: "Leadership in AI innovation." },
+  { title: "AI Research & Algorithmic Excellence Award", desc: "Excellence in AI research and algorithms." },
+  { title: "Applied Artificial Intelligence Excellence Award", desc: "Practical AI implementations." },
+  { title: "Generative AI Innovation Award", desc: "Innovation in generative AI." },
+  { title: "AI in Healthcare & Life Sciences Excellence Award", desc: "AI-driven healthcare innovation." },
+  { title: "AI in Finance & FinTech Innovation Award", desc: "AI applications in finance and fintech." },
+  { title: "AI in Smart Cities & Governance Excellence Award", desc: "AI-enabled smart governance." },
+  { title: "Real-World Machine Learning Excellence Award", desc: "Production-grade ML systems." },
+  { title: "Deep Learning & Neural Networks Excellence Award", desc: "Excellence in deep learning." },
+  { title: "Computer Vision & Image Intelligence Award", desc: "Innovation in computer vision." },
+  { title: "Natural Language Processing (NLP) Excellence Award", desc: "Excellence in NLP solutions." },
+  { title: "Ethical & Responsible AI Leadership Award", desc: "Leadership in ethical AI." },
+  { title: "Trustworthy AI & Model Governance Excellence Award", desc: "Model governance and trustworthiness." },
+  { title: "Explainable AI (XAI) Innovation Award", desc: "Innovation in explainable AI." },
+  { title: "AI for Social Good Excellence Award", desc: "AI solutions for social impact." },
+  { title: "Autonomous Systems & Robotics AI Excellence Award", desc: "AI for autonomous systems and robotics." },
+  { title: "Intelligent Decision Systems Excellence Award", desc: "Advanced decision intelligence systems." },
+  { title: "Edge AI & Embedded Intelligence Award", desc: "Edge AI and embedded systems." },
+  { title: "AI-Powered Automation Excellence Award", desc: "Automation driven by AI." },
+  { title: "Networking, Infrastructure & Cybersecurity Leadership Award", desc: "Leadership in secure AI infrastructure." }
+];
+
+const cloudAwards = [
+  { title: "Cloud-Native Architecture Excellence Award", desc: "Excellence in cloud-native design." },
+  { title: "Multi-Cloud & Hybrid Cloud Strategy Excellence Award", desc: "Advanced multi-cloud strategies." },
+  { title: "Cloud Security & Compliance Leadership Award", desc: "Leadership in cloud security." },
+  { title: "Cloud Migration & Modernization Champion Award", desc: "Successful cloud migrations." },
+  { title: "Cloud Cost Optimization & FinOps Excellence Award", desc: "Cost-efficient cloud operations." },
+  { title: "Serverless Computing Innovation Award", desc: "Innovation in serverless computing." },
+  { title: "Cloud AI & Data Platform Excellence Award", desc: "Cloud-based AI and data platforms." },
+  { title: "Database Performance & Scalability Excellence Award", desc: "High-performance databases." },
+  { title: "High-Availability & Disaster Recovery Excellence Award", desc: "Resilient cloud systems." },
+  { title: "Big Data Engineering Achievement Award", desc: "Big data engineering excellence." },
+  { title: "Real-Time Data Streaming & Analytics Excellence Award", desc: "Real-time analytics systems." },
+  { title: "Data Lakehouse Architecture Excellence Award", desc: "Modern lakehouse architectures." },
+  { title: "Data Security & Privacy Leadership Award", desc: "Leadership in data protection." },
+  { title: "Data Governance & Master Data Management Excellence Award", desc: "Strong data governance practices." },
+  { title: "Enterprise Data Integration Excellence Award", desc: "Enterprise-scale data integration." },
+  { title: "Platform Engineering Excellence Award", desc: "Excellence in platform engineering." }
+];
+
+const manufacturingAwards = [
+  { title: "Smart Manufacturing Innovation Excellence Award", desc: "Innovation in smart manufacturing." },
+  { title: "Industry 4.0 Transformation Leadership Award", desc: "Leadership in Industry 4.0 adoption." },
+  { title: "Industrial Automation Leadership Award", desc: "Leadership in industrial automation." },
+  { title: "Robotics & Autonomous Manufacturing Excellence Award", desc: "Robotics-driven manufacturing." },
+  { title: "Digital Twin & IoT Manufacturing Excellence Award", desc: "Digital twin and IoT innovation." },
+  { title: "Predictive Maintenance & Asset Intelligence Award", desc: "Predictive maintenance excellence." },
+  { title: "AI-Driven Quality Control Excellence Award", desc: "AI-based quality control." },
+  { title: "Industrial Cybersecurity Excellence Award", desc: "Cybersecurity in manufacturing." },
+  { title: "Smart Supply Chain & Logistics Innovation Award", desc: "Smart logistics solutions." },
+  { title: "Energy-Efficient Manufacturing Excellence Award", desc: "Energy-efficient manufacturing." },
+  { title: "Additive Manufacturing (3D Printing) Innovation Award", desc: "Innovation in additive manufacturing." },
+  { title: "Human–Machine Collaboration Excellence Award", desc: "Effective human–machine collaboration." }
+];
+
+const softwareAwards = [
+  { title: "DevOps Transformation Excellence Award", desc: "DevOps culture and transformation." },
+  { title: "Agile & Scaled Agile Implementation Excellence Award", desc: "Agile at scale excellence." },
+  { title: "Software Architecture Leadership Award", desc: "Leadership in software architecture." },
+  { title: "Microservices & API Architecture Excellence Award", desc: "Microservices and API excellence." },
+  { title: "Cloud-Native Application Development Excellence Award", desc: "Cloud-native app development." },
+  { title: "Secure Software Engineering Excellence Award", desc: "Secure-by-design software." },
+  { title: "High-Impact SaaS Product Excellence Award", desc: "High-impact SaaS products." },
+  { title: "Enterprise Application Modernization Excellence Award", desc: "Modernizing enterprise applications." },
+  { title: "Low-Code / No-Code Platform Innovation Award", desc: "Innovation in low-code platforms." },
+  { title: "AI-Enabled Software Solutions Excellence Award", desc: "AI-powered software solutions." },
+  { title: "Emerging Technology Solutions Excellence Award", desc: "Solutions using emerging tech." },
+  { title: "Blockchain-Based Software Innovation Award", desc: "Blockchain-driven software." },
+  { title: "Quantum-Ready Software Architecture Award", desc: "Quantum-ready software systems." }
+];
+
+const sapAwards = [
+  { title: "SAP S/4HANA Cloud Innovation Excellence Award", desc: "Innovation using SAP S/4HANA Cloud." },
+  { title: "SAP Cloud Migration Excellence Award", desc: "Successful SAP cloud migrations." },
+  { title: "SAP Business Technology Platform Excellence Award", desc: "Excellence in SAP BTP usage." },
+  { title: "SAP ERP Implementation Leadership Award", desc: "Leadership in SAP ERP implementations." },
+  { title: "SAP-Driven Business Process Optimization Excellence Award", desc: "Optimized business processes via SAP." },
+  { title: "SAP Intelligent Enterprise Transformation Award", desc: "End-to-end SAP-driven transformation." },
+  { title: "SAP Analytics Cloud Excellence Award", desc: "Advanced analytics using SAP." },
+  { title: "SAP Integration Suite Excellence Award", desc: "Excellence in SAP integrations." },
+  { title: "SAP AI, ML & Joule Innovation Award", desc: "AI and ML innovation in SAP." },
+  { title: "SAP Industry Cloud Solutions Excellence Award", desc: "Industry-specific SAP cloud solutions." },
+  { title: "SAP Digital Supply Chain Excellence Award", desc: "Digital supply chain transformation." },
+  { title: "SAP Finance Transformation Excellence Award", desc: "Finance transformation using SAP." },
+  { title: "SAP Human Capital Management (HCM) Excellence Award", desc: "Excellence in SAP HCM solutions." },
+  { title: "SAP Sustainability & Green Ledger Excellence Award", desc: "Sustainability initiatives using SAP." }
+];
+
+const specialRecognitionAwards = [
+  { title: "Flagship Innovation Project Award", desc: "Recognition for flagship innovation projects." },
+  { title: "Global Teaching Ambassador Award", desc: "Global advocacy for teaching excellence." },
+  { title: "Knowledge Dissemination Excellence Award", desc: "Outstanding knowledge dissemination." },
+  { title: "International Partnership Leadership Award", desc: "Leadership in international partnerships." },
+  { title: "Student Success Leadership Award", desc: "Leadership focused on student success." },
+  { title: "Sustainable Development Goals Impact Excellence Award", desc: "Impact aligned with UN SDGs." }
+];
 
     function renderAwards(list, containerId) {
       const container = document.getElementById(containerId);
@@ -227,7 +644,20 @@
     }
 
     renderAwards(academicAwards, "academic-awards");
-    renderAwards(industryAwards, "industry-awards");
+    renderAwards(academiaIndustryAwards, "industry-awards");
+    renderAwards(researchAwards, "research-awards");
+    renderAwards(innovationAwards, "innovation-awards");
+    renderAwards(institutionalAwards, "institutional-awards");
+    renderAwards(specialRecognitionAwards, "special-recognition-awards");
+    renderAwards(aiAwards, "ai-awards");
+    renderAwards(cloudAwards, "cloud-awards");
+    renderAwards(manufacturingAwards, "manufacturing-awards");
+    renderAwards(softwareAwards, "software-awards");
+    renderAwards(sapAwards, "sap-awards");
+
+
+
+
   </script>
 
     <script src="js/main-js.js"></script>
