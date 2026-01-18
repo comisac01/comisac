@@ -63,6 +63,7 @@ window.onload = function (e) {
           <!--<i class="fa fa-phone"> &nbsp;: +</i> <br>--!>
           <!--<i class="fa fa-fax"> : +</i> <br>--!>
           <i class="fa fa-envelope fa-lg"></i>  : <a href="mailto:" class="foot-link">comsia.conf@gmail.com</a>
+          <i class="fa fa-envelope fa-lg"></i>  : <a href="mailto:" class="foot-link">support@comsia.in</a>
        </address>
         </div>
         <div class="col-12 col-sm-4 align-self-center">
