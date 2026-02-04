@@ -102,7 +102,22 @@
             <button class="btn btn-info button-shadow m-2" onclick="window.open('judge-appointment.html')">Judge Appointment Criteria</button>
             <button class="btn btn-info button-shadow m-2" onclick="window.open('judging.html', '_blank')">Judging Criteria</button>
             
+          </div><br/>
+
+          <h2>Judges</h2>
+
+          <!-- <div class="row row-content">
+                <h2>Submission Guidelines</h2> -->
+
+      <div class="col-12 col-sm col-md">
+        <section class="keynote-speakers">      
+          <div class="cards" id="speakerCards">
+            <!-- Speaker cards added dynamically -->
           </div>
+        </section>
+      </div>
+      
+    <!-- </div> -->
           
 
           <h2>Contact Details</h2>
@@ -147,7 +162,51 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+<script>
+   const speakersData = {
+  "2026": [
+    { desc: "Dharmateja Priyadarshi Uddandarao, Senior Statistician- Data Scientist", image: "./gallery/judges/Dharmateja.jpg" },
+  ]
 
+
+};
+
+// const yearTabs = document.getElementById('yearTabs');
+const speakerCards = document.getElementById('speakerCards');
+
+// function createTabs() {
+//   const years = Object.keys(speakersData).reverse();
+  
+//     const btn = document.createElement('button');
+//     btn.className = 'tab-button';
+//     if (index === 0) btn.classList.add('active');
+//     btn.innerText = year;
+//     btn.addEventListener('click', () => {
+//       document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+//       btn.classList.add('active');
+//       showSpeakers(year);
+//     });
+//     yearTabs.appendChild(btn);
+  
+
+//   showSpeakers(years[0]); // Show first year's speakers initially
+// }
+
+function showSpeakers(year) {
+  speakerCards.innerHTML = '';
+  speakersData[year].forEach(speaker => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <img class="card-image" src="${speaker.image}" alt="${speaker.desc}" />
+      <p class="card-desc">${speaker.desc}</p>
+    `;
+    speakerCards.appendChild(card);
+  });
+}
+showSpeakers(2026);
+
+  </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var scrollToTopBtn = document.getElementById('scrollToTopBtn');
