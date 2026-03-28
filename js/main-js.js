@@ -164,8 +164,18 @@ This service was provided for free by Microsoft and they bore all expenses, incl
                     <li class="nav-item">
                       <a class="nav-link text-white" href="downloads.html">Downloads</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="awards.html">Awards</a>
+                    
+                    <li class="nav-item dropdown dmenu">
+                          <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                            Awards
+                          </a>
+                          <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item text-white" href="awards.html">Awards</a>
+                            <div class="dropdown-divider"></div> 
+                            <a class="dropdown-item text-white" href="awards2026.html">ComSIA 2026 Awards Results</a>
+                            <!--<div class="dropdown-divider"></div>-->
+                                                       
+                          </div>
                     </li>
                     <li class="nav-item dropdown dmenu">
                           <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
