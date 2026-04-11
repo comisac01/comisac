@@ -173,6 +173,7 @@ This service was provided for free by Microsoft and they bore all expenses, incl
                           <a class="dropdown-item text-white" href="awards.html">Awards</a>
                             <div class="dropdown-divider"></div> 
                             <a class="dropdown-item text-white" href="awards2026.html">ComSIA 2026 Awards Results</a>
+                            <a class="dropdown-item text-white" href="bestPapers.html">Best Paper Awards</a>
                             <!--<div class="dropdown-divider"></div>-->
                                                        
                           </div>
