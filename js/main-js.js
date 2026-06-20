@@ -5,20 +5,20 @@ window.onload = function (e) {
     <i><img src="kiit images/comsia.jpg" alt="KIITlogo" class="img-fluid jumbotron-img-top rounded-4 rounded box-shadow" width="120"></i><br><br>
     <i><img src="kiit images/du.jpg" alt="KIITlogo" class="img-fluid jumbotron-img-top rounded-4 rounded box-shadow" width="120"></i> <br><br>
     <i> <img src="kiit images/rajguru.png" alt="" class="img-fluid jumbotron-img-bottom rounded-4 rounded box-shadow" width="120"></i><br><br>
-    <i> <img src="kiit images/springer.png" alt="" class="img-fluid jumbotron-img-bottom rounded-4 rounded box-shadow" width="120"></i>
+   
 
   </span>
   <div class="jumbo-details">
-    <h1><b>INTERNATIONAL CONFERENCE ON COMPUTING SYSTEMS AND INTELLIGENT APPLICATIONS </b><br> (ComSIA 2026) <br></h1>
+    <h1><b>4th INTERNATIONAL CONFERENCE ON COMPUTING SYSTEMS AND INTELLIGENT APPLICATIONS  </b><br> (ComSIA 2027) <br></h1>
     <h2 class="">
       Springer LNNS Approved Conference
     </h2> 
     
     <hr>
     <h2 class="">
-      March 20-21<sup>st</sup>,2026
+      March 5-6<sup>th</sup>,2027
     </h2> 
-    <h4 class="">ComSIA 2026 WILL BE JOINTLY ORGANISED BY SCHOOL OF <br/> OPEN LEARNING, UNIVERSITY OF DELHI AND <br/> SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, <br/> UNIVERSITY OF DELHI AND<br/>SILICON UNIVERSITY, ODISHA</h4>
+    <h4 class="">ComSIA 2027 WILL BE JOINTLY ORGANISED BY SCHOOL OF <br/> OPEN LEARNING, UNIVERSITY OF DELHI AND <br/> SHAHEED RAJGURU COLLEGE OF APPLIED SCIENCES, <br/> UNIVERSITY OF DELHI AND<br/>SILICON UNIVERSITY, ODISHA</h4>
     <p id="demo" style="font-size:1.4rem;font-weight:500"></p>
     <span id="jumbo-images1">
     <i> <img src="gallery/silicon.jpg" alt="" class="img-fluid jumbotron-img-bottom rounded-4 rounded box-shadow" width="120"></i><br><br>
@@ -52,7 +52,7 @@ window.onload = function (e) {
                 <li><a href="call_for_papers.html" class="foot-link">Call for Papers</a></li>
                 <li><a href="important_dates.html" class="foot-link">
                 Important Dates</a></li>
-                <li><a href="https://cmt3.research.microsoft.com/ComSIA2026" class="foot-link">
+                <li><a href="https://cmt3.research.microsoft.com/ComSIA2027" class="foot-link">
                 CMT portal</a></li>
             </ul>
         </div>
@@ -159,7 +159,7 @@ This service was provided for free by Microsoft and they bore all expenses, incl
                       <a class="nav-link text-white " href="conference_venue.html">Conference Venue</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white " href="ideathon.html">Ideathon 2026</a>
+                      <a class="nav-link text-white " href="ideathon.html">Ideathon 2027</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link text-white" href="downloads.html">Downloads</a>
@@ -183,10 +183,12 @@ This service was provided for free by Microsoft and they bore all expenses, incl
                             Previous Conference
                           </a>
                           <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item text-white" href="prevconf2026.html">ComSIA 2026</a>
+                            <div class="dropdown-divider"></div>
                           <a class="dropdown-item text-white" href="prevconf2025.html">ComSIA 2025</a>
                             <div class="dropdown-divider"></div> 
                             <a class="dropdown-item text-white" href="prevconf2024.html">ComSIA 2024</a>
-                            <!--<div class="dropdown-divider"></div>-->
+                            
                                                        
                           </div>
                         </li>
@@ -245,7 +247,7 @@ This service was provided for free by Microsoft and they bore all expenses, incl
 
 // me commented
 // Set the date we're counting down to
-var countDownDate = new Date("March 20, 2026 12:00:00").getTime();
+var countDownDate = new Date("March 4, 2027 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
