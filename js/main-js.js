@@ -152,9 +152,19 @@ This service was provided for free by Microsoft and they bore all expenses, incl
                       </div>
                       
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="invited_speakers.html"> Invited Speakers</a>
-                      </li>
+                    <li class="nav-item dropdown dmenu">
+                          <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                            Speakers
+                          </a>
+                          <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item text-white" href="invited_speakers.html">Invited Speakers</a>
+                            <div class="dropdown-divider"></div> 
+                            <a class="dropdown-item text-white" href="keynote_speakers.html">Keynote Speakers From Industry</a>                            
+                            <!--<div class="dropdown-divider"></div>-->
+                                                       
+                          </div>
+                    </li>
+                    
                     <li class="nav-item">
                       <a class="nav-link text-white " href="conference_venue.html">Conference Venue</a>
                     </li>
@@ -165,19 +175,19 @@ This service was provided for free by Microsoft and they bore all expenses, incl
                       <a class="nav-link text-white" href="downloads.html">Downloads</a>
                     </li>
                     
-                    <li class="nav-item dropdown dmenu">
-                          <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
-                            Awards
-                          </a>
-                          <div class="dropdown-menu sm-menu">
-                          <a class="dropdown-item text-white" href="awards.html">Awards</a>
-                            <div class="dropdown-divider"></div> 
-                            <a class="dropdown-item text-white" href="awards2026.html">ComSIA 2026 Awards Results</a>
-                            <a class="dropdown-item text-white" href="bestPapers.html">Best Paper Awards</a>
-                            <!--<div class="dropdown-divider"></div>-->
-                                                       
-                          </div>
-                    </li>
+                      <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                              Awards
+                            </a>
+                            <div class="dropdown-menu sm-menu">
+                            <a class="dropdown-item text-white" href="awards.html">Awards</a>
+                              <div class="dropdown-divider"></div> 
+                              <a class="dropdown-item text-white" href="awards2026.html">ComSIA 2026 Awards Results</a>
+                              <a class="dropdown-item text-white" href="bestPapers.html">Best Paper Awards</a>
+                              <!--<div class="dropdown-divider"></div>-->
+                                                        
+                            </div>
+                      </li>
                     <li class="nav-item dropdown dmenu">
                           <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
                             Previous Conference
