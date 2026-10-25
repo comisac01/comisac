@@ -329,85 +329,165 @@ This service was provided for free by Microsoft and they bore all expenses, incl
     });
   </script>
   <script src="js/main-js.js"></script>
-  <script>
-   const speakersData = {
-    "2026":[
-    { desc: "Dr Nguyen Gia Nhu, DuyTan University, Vietnam", image: "/speaker-images/gia.jpg" },
-    { desc: "Priya Pattanaik, BSBI - School of Business and Innovation, Germany", image: "/speaker-images/priya.jpg" },
-    { desc: "Prof. Kavita Khanna, South Asian University, New Delhi, India", image: "/speaker-images/kavita.jpg" },
-    { desc: "Prof. Fernando Moreira, Universidade Portucalense, Portugal", image:"/speaker-images/fernando.jpg" },
+<script>
+    const API_URL = "https://adroid-admin.vercel.app/api/v1/speakers";
 
-    ],
-  "2025": [
-    { desc: "Mr. Udayan Kanade, CEO, Oneirix Labs, USA", image: "/speaker-images/udayan.jpg" },
-    { desc: "Mr. Aninda Bose, Executive Editor, Springer Nature Group, London, United Kingdom", image: "/speaker-images/aninda.jpg" },
-    { desc: "Prof. Sudan Jha, Kathmandu University, Nepal", image: "/speaker-images/sudan.jpg" },
-    { desc: "Prof. Vivek Ashok Bohara, Professor, ECE Department, IIIT Delhi, India", image: "/speaker-images/vivek.jpg" },
-    { desc: "Prof. Milan Tuba, Singidunun University, Serbia", image: "/speaker-images/milan.jpg" },
-    { desc: "Prof. Bhuvan Unhelkar, University of South Florida, USA", image: "/speaker-images/bhuvan.jpg" },
-    { desc: "Dr. Eva Tuba, Trinity University, TX, USA", image: "/speaker-images/eva.jpg" },
-    { desc: "Prof. Polkowski Zdzislaw, Jan Wyzykowski University, Poland", image: "/speaker-images/polkowski.jpg" },
-    { desc: "Dr Rajkumar Singh Rathore, Cardiff Metropolitan University, UK", image: "/speaker-images/raj.jpg" },
-    {
-      desc:"Vinay Kumar Gali, HCL America INC",
-      image:"./speaker-images/vinay.jpeg"
-    },
-    { desc: "Ravikumar Mani Naidu Gunasekaran, Senior Software Engineer, US Bank", image: "/speaker-images/ravikumar.jpg" },
-  ],
-  "2024": [
-    { desc: "Prof. Dr. Robertas Damasevicius, Kaunas University of Technology, Lithuania", image: "/speaker-images/robertas.webp" },
-    { desc: "Dr. Lalit Garg, University of Malta, Malta", image: "/speaker-images/lalit.jpg" },
-    { desc: "Prof. Gwanggil Jeon, Incheon National University, Korea", image: "/speaker-images/gwanggil.jpg" },
-    { desc: "Dr. Korhan Cengiz, University of Zagreb, Croatia", image: "/speaker-images/korhan.jpg" },
-    { desc: "Dr Rajkumar Singh Rathore, Cardiff Metropolitan University, UK", image: "/speaker-images/raj.jpg" },
-    { desc: "Hari Suresh Babu Gummadi, Architect IT Solutions, Frontier Communications", image: "/speaker-images/hari.jpg"},
-    {
-      desc:"Divya Kodi, Cyber Security Senior Data Analyst, Truist Bank",
-      image:"./speaker-images/divya.jpg"
-    },
-    { desc: "Vasanta Kumar Tarra, Lead Engineer at Guidewire Software", image: "/speaker-images/vasanta.jpeg" },
-  ]
+    const CONFERENCE_ID = "c2";
+    const SPEAKER_CATEGORY = "homepage";
+    const SPEAKER_TYPE = "keynote";
 
+    // Homepage years to display
+    const SPEAKER_YEARS = [2026, 2025, 2024];
 
-};
+    const yearTabs = document.getElementById("yearTabs");
+    const speakerCards = document.getElementById("speakerCards");
 
-const yearTabs = document.getElementById('yearTabs');
-const speakerCards = document.getElementById('speakerCards');
+    let activeController = null;
 
-function createTabs() {
-  const years = Object.keys(speakersData).reverse();
-  years.forEach((year, index) => {
-    const btn = document.createElement('button');
-    btn.className = 'tab-button';
-    if (index === 0) btn.classList.add('active');
-    btn.innerText = year;
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      showSpeakers(year);
-    });
-    yearTabs.appendChild(btn);
-  });
+    // Create year tabs
+    function createTabs() {
+        const years = [...SPEAKER_YEARS].sort((a, b) => b - a);
 
-  showSpeakers(years[0]); // Show first year's speakers initially
-}
+        years.forEach((year, index) => {
+            const btn = document.createElement("button");
 
-function showSpeakers(year) {
-  speakerCards.innerHTML = '';
-  speakersData[year].forEach(speaker => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `
-      <img class="card-image" src="${speaker.image}" alt="${speaker.desc}" />
-      <p class="card-desc">${speaker.desc}</p>
-    `;
-    speakerCards.appendChild(card);
-  });
-}
+            btn.type = "button";
+            btn.className = "tab-button";
+            btn.textContent = year;
 
-createTabs();
+            if (index === 0) {
+                btn.classList.add("active");
+            }
 
-  </script>
+            btn.addEventListener("click", () => {
+                if (btn.classList.contains("active")) return;
+
+                document.querySelectorAll("#yearTabs .tab-button")
+                    .forEach(tab => tab.classList.remove("active"));
+
+                btn.classList.add("active");
+
+                loadSpeakers(year);
+            });
+
+            yearTabs.appendChild(btn);
+        });
+
+        // Load the latest year's speakers on initial page load
+        if (years.length > 0) {
+            loadSpeakers(years[0]);
+        }
+    }
+
+    // Fetch keynote speakers for the selected year
+    async function loadSpeakers(year) {
+        if (activeController) {
+            activeController.abort();
+        }
+
+        const controller = new AbortController();
+        activeController = controller;
+
+        const params = new URLSearchParams({
+            conference_id: CONFERENCE_ID,
+            year: String(year),
+            type: SPEAKER_CATEGORY,
+            speaker_type: SPEAKER_TYPE
+        });
+
+        speakerCards.innerHTML = "";
+
+        const status = document.createElement("p");
+        status.className = "text-center";
+        status.textContent = "Loading speakers...";
+        speakerCards.appendChild(status);
+
+        try {
+            const response = await fetch(`${API_URL}?${params}`, {
+                method: "GET",
+                signal: controller.signal
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            // Ignore responses from a previously selected year
+            if (activeController !== controller) return;
+
+            speakerCards.innerHTML = "";
+
+            const speakers = Array.isArray(data.items) ? data.items : [];
+
+            if (speakers.length === 0) {
+                status.textContent = `No keynote speakers found for ${year}.`;
+                speakerCards.appendChild(status);
+                return;
+            }
+
+            renderSpeakers(speakers);
+
+        } catch (error) {
+            if (error.name === "AbortError") return;
+
+            if (activeController !== controller) return;
+
+            console.error("Failed to load keynote speakers:", error);
+
+            speakerCards.innerHTML = "";
+
+            const errorMessage = document.createElement("p");
+            errorMessage.className = "text-center";
+            errorMessage.textContent = "Unable to load speakers. Please try again.";
+
+            const retryButton = document.createElement("button");
+            retryButton.type = "button";
+            retryButton.className = "btn btn-primary";
+            retryButton.textContent = "Retry";
+
+            retryButton.addEventListener("click", () => loadSpeakers(year));
+
+            speakerCards.appendChild(errorMessage);
+            speakerCards.appendChild(retryButton);
+        }
+    }
+
+    // Render speaker cards using API data
+    function renderSpeakers(speakers) {
+        speakerCards.innerHTML = "";
+
+        speakers.forEach(speaker => {
+            const card = document.createElement("div");
+            card.className = "card";
+
+            const image = document.createElement("img");
+            image.className = "card-image";
+            image.src = speaker.image_url || "";
+            image.alt = speaker.name || "Keynote speaker";
+            image.loading = "lazy";
+
+            image.addEventListener("error", () => {
+                image.style.display = "none";
+            });
+
+            const description = document.createElement("p");
+            description.className = "card-desc";
+            description.textContent = [
+                speaker.name,
+                speaker.designation
+            ].filter(Boolean).join(", ");
+
+            card.appendChild(image);
+            card.appendChild(description);
+
+            speakerCards.appendChild(card);
+        });
+    }
+
+    createTabs();
+</script>
 </body>
 
 </html>
