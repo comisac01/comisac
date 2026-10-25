@@ -38,200 +38,65 @@
         <h1 class="h4 text-center">Special Sessions</h1>
       </div>
     </div>
-     <div class="row" style="margin-top: 60px;">
-      
-        <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 1.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS001:Applications of Explainable AI and Generative AI in Sustainable Analytics
-               <i class="fa fa-download"></i></button></a>
+     <div class="row" id="sessions-container" style="margin-top: 60px;">
+  <div class="col-12 text-center">
+    Loading special sessions...
+  </div>
+</div>
 
-      
+<script>
+  fetch("https://adroid-admin.vercel.app/api/v1/sessions?conference_id=c2")
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to load sessions");
+      return response.json();
+    })
+    .then(data => {
+      const container = document.getElementById("sessions-container");
+      container.innerHTML = "";
 
-      </div>
-        <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 2.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS002:AI, Computer Vision, and Biometrics: Intelligent Systems for Future Applications
-               <i class="fa fa-download"></i></button></a>
+      data.items.forEach(session => {
+        const sessionNumber = session.session_id.replace("SS-", "").padStart(3, "0");
 
-      
+        const organisers = (session.organisers || [])
+          .map(organiser => `
+            <div class="organiser">               
+              <strong>${organiser.name}</strong>
+              ${organiser.designation ? `<div class="text-muted">${organiser.designation}</div>` : ""}
+            </div>
+          `)
+          .join("");
 
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 3.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS003: Emerging Trends in Intelligent Computing, Multimodal Intelligence, and Data-Driven Technologies
-               <i class="fa fa-download"></i></button></a>
+        container.innerHTML += `
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">${session.title}</h5>
 
-      
+                <div class="mb-3">
+                  <b>Organisers:</b><br>
+                  ${organisers || '<span class="text-muted">No organisers listed</span>'}
+                </div>
 
-      </div>
-       <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 4.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS004:IoT and AI empowered Smart, Secure and Intelligent Applications
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      
-    <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 5.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS005: Trustworthy Artificial Intelligence and Intelligent Computing for Next-Generation Smart Systems 
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 6.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS006:Artificial Intelligence, Blockchain and Cyber Security for Next-Generation Intelligent Computing
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-       <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 7.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS007: Artificial Intelligence, Cloud Computing, and Intelligent Decision Support Systems for Sustainable Digital Transformation
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-       
-        <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 8.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS008:Explainable and Generative AI for Sustainable, Secure and Responsible Intelligent Systems
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      
-        <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 9.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS009: Machine Learning-Based Intelligent Systems and Applications
-               <i class="fa fa-download"></i></button></a>
-      </div>
-        <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 10.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS010: Current Trends in NLP: Applications of Transformers
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 11.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS011: AI-Enabled Intelligent Systems and Machine Learning Innovations for Smart and Sustainable Future
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 12.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS012: Advances in Computational Intelligence and application
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 13.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS013: Cybersecurity and Resilience in Next-Generation Networks and Computing Systems 
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 14.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS014: Emerging AI, Secure Computing and Sustainable Digital Transformation
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/Session 15.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS015: Artificial Intelligence-Driven Carbon Credits and Innovative Applications for a Net-Zero and SDG-Aligned Future
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS016.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS016: AI Agents and Emerging Technologies in Artificial Intelligence
-               <i class="fa fa-download"></i></button></a>
-
-      
-
-      </div>
-      <!--div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS017.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS017: Blockchain, Cybersecurity, and AI: Building Resilient Systems for the Future
-               <i class="fa fa-download"></i></button></a>   
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS018.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS018: Advances in AI for Emerging Sustainable Technologies
-               <i class="fa fa-download"></i></button></a>   
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS019.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS019: Digital Health & AI for Healthcare Applications
-               <i class="fa fa-download"></i></button></a>   
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS020.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS020: Agentic AI for Sustainable Development: Autonomous Decision-Makers Driving SDG 13 Climate Action
-               <i class="fa fa-download"></i></button></a>   
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS021.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS021: Generative AI and Data Analytics in Education and Healthcare
-               <i class="fa fa-download"></i></button></a>   
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS022.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS022: Emerging Technologies on Advanced Smart Analytics
-               <i class="fa fa-download"></i></button></a>   
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS023.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS023: Computational Intelligence-Driven Approaches in Modern Data Science
-               <i class="fa fa-download"></i></button></a>   
-
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS024.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS024: AI-Driven Cybersecurity, Digital Forensics, and Intelligent Automation 
-           <i class="fa fa-download"></i></button></a>   
-        
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS025.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS025: Applications of Explainable AI and Generative AI in Sustainable Analytics
-           <i class="fa fa-download"></i></button></a>   
-        
-      </div>
-      <div class="col col-12 col-lg-6 col-md-4">
-        <a href="/gallery/SS026.pdf"
-            target="_blank"><button class="btn mb-2" style="width:100%;margin-bottom:1px;font-size:18px">SS026: Internet of AI Things (IoAT): Cognitive–Intelligent Connected Systems and Applications
-           <i class="fa fa-download"></i></button></a>   
-        
-      </div> -->
-      
-      
-      
-    </div>
+                <a
+                  href="${session.pdf_url}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary mt-auto"
+                >
+                   Download SS ${sessionNumber}
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    })
+    .catch(error => {
+      console.error("Error loading sessions:", error);
+      document.getElementById("sessions-container").innerHTML =
+        '<div class="col-12"><p>Unable to load sessions. Please try again later.</p></div>';
+    });
+</script>
   </div>
   <!-- footer starts here -->
   <footer class="footer" style="background-color: #2b69b4;">
